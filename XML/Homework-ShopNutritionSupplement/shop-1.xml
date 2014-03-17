@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR01021324" type="P" purpose="P21 VM74">
+            <name>Голд Стандарт</name>
+            <price>102.00</price>
+            <rating>9</rating>
+            <image>gold_standard.jpg</image>
+            <quantity>1</quantity>
+            <taste>шоколад</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Голд Стандарте бил най-продаваната хранителна добавка в културизма. Това е продукт за тези, които се опитват да покачат чиста мускулна маса! Изолат на суроватъчен протеин се състои от чист протеин, а тази протеинова добавка няма високо съдържание на мазнини, лактоза и холестерол, както други протеинови добавки обикновено обичат да пазят в тайна. Oптимум нутришън е марка известна с налагане на стандарт за протеинови добавки и това може да е причината, поради която те могат да наименоват този продукт директно като златният стандарт за суроватъчен протеин. Много други протеинови добавки се опитват направят подобни твърдения, но ако изследвате ключовите съставки на други "чисти" суроватъчни протеини на пазара, ще откриете, че тези продукти са пълни с изкуствени подсладители, химикали, цветови и различни вкусови подобрители.
+            </description>
+            <brand>Oптимум нутришън</brand>
+            <packings packing_types_id="P01">
+                <packing>2.225</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>22 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR01036834" type="AK" purpose="AK54 K04">
+            <name>Амино х</name>
+            <price>41.00</price>
+            <rating>8</rating>
+            <image>amino_x.jpg</image>
+            <quantity>1</quantity>
+            <taste>ябълка</taste>
+            <content>
+                <material>
+                    <material_name>аминокиселини</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>Амино х е първият ефервесцентен продукт за издръжливост и възстановяване. Предназначен е за подпомагане на протеиновия синтез, ресинтез на гликоген, съхраняване на мускулите, въстановяване от тежки тренировки, мускулна издръжливост и устойчивост на мускулна умора.</description>
+            <brand>БСН</brand>
+            <packings packing_types_id="P01">
+                <packing>0.300</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>30 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR10789243" type="K" purpose="K4">
+            <name>Креатин монохидрат</name>
+            <price>45.00</price>
+            <rating>10</rating>
+            <image>creatine_monohydrate.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>креатин</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креатин монохидрат е готов източник на енергия за мускулите. Превръща се несъмнено в един от най-добрите продукти за повишаване на мускулната сила. Освен подсилване на мускулите и увеличаване на мускулната маса,  креатин монохидрат има енергизиращо действие и върху останалите части на тялото. Креатинът е био-молекула, която произвежда АТФ. Той е продукт, синтезиран в човешкото тяло, който се произвежда от черния дроб и се складира в мозъка, скелетната и сърдечна мускулатура и който служи като готов източник за производство на АТФ. Креатинът е ключово вещество, подпомагащо ускорено презареждане на АТФ в мускулите. По-голямо количество от него води до увеличено производство на енергия, което позволява на мускулите да работят по-дълго и при по-висока интензивност. Креатинът е повече от ергогенен хранителен елемент: той има уголемяващ ефект върху мускулите. Клетъчното увеличение или клетъчната хидратация включва свързване на водата с мускулните фибри. Тази връзка придава „напомпан” вид. Тъй като водата е свързана вътре в мускула, атлетите, използващи креатин, нямат „подпухнала” външност. С други думи, мускулите изглеждат по-големи, а същевременно се характеризират с повишена сила, енергия и издръжливост. Това им позволява да се възстановяват по-бързо и да разполагат с повече енергия за всяка тренировъчна сесия.
+            </description>
+            <brand>Ултимейт</brand>
+            <packings packing_types_id="P01">
+                <packing>1.000</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>50 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR31036214" type="K" purpose="K4">
+            <name>Креатор</name>
+            <price>29.00</price>
+            <rating>7</rating>
+            <image>creator.jpg</image>
+            <quantity>1</quantity>
+            <taste>ябълка</taste>
+            <content>
+                <material>
+                    <material_name>креатин</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>глутамин</material_name>
+                    <value>2</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>калциум</material_name>
+                    <value>3</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>Креатор е единствен в света на хранителните добавки. Това е алкализиран креатин с увеличен пхц нива усвояване и ефективност, които задминават далеч тези на другите креатинови съставки. Креатор съдържа Микронизиран креатин, най-чистата креатинова монохидратна съставка, която е достъпна. Разтваря се бързо и напълно все едно е обработен до изключително фини 180 микрона. Благодарение на невероятната степен на разтворимост, той навлиза в кръвообращението и мускулите в 90% форма на готовност за ползване. </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="Т02">
+                <packing>40</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>20 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR14530486" type="P" purpose="P21 VM74">
+            <name>Предатор</name>
+            <price>52.00</price>
+            <rating>6</rating>
+            <image>predator.jpg</image>
+            <quantity>1</quantity>
+            <taste>ванилия</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>Предатор представлява изключително качествен суроватъчен протеин концентрат, специално създаден под формата на добавка към високопротеинов хранителен режим. Тази формула е основно насочена към атлети, културисти и професионални спортисти, нуждаещи се от всекидневен голям протеинов прием за изграждане на мускулна тъкан,  увеличаване на силата и поддържане на регенерацията след изтощителна тренировка.Предатор доставя изграждащите структури за бърз растеж на чиста мускулатура, поддържа възстановяването след тренировъчни сесии и притежава отличен, мек вкус! Той съдържа ултра-филтриран, обработен при ниска температура и незабавно разтворим суроватъчен протеин концентрат, както и високо количество аминокиселини, извлечени от говежди протеин.</description>
+            <brand>Амикс</brand>
+            <packings packing_types_id="P01">
+                <packing>2.250</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>22 дози</servings>
+            </packings> 
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international_code="P21">Качване на чиста мускулна маса</purpose>
+        <purpose international_code="AK54">Въстановяване от тежки тренировки</purpose>
+        <purpose international_code="K4">Увеличаване на енергия и сила</purpose>
+        <purpose international_code="VM74">Приемане на необходимите за деня хранителни вещества</purpose>
+        <purpose international_code="G34">Качване на мускулна маса</purpose>
+        <purpose international_code="AB35">Мускулната издържливост, сила и предотвратяване на мускулната умора, мускулен растеж, активна умствена дейност и концентрация</purpose>
+        <purpose international_code="E67">Увеличаване на  васкуларността и напомпването</purpose>
+        <purpose international_code="AB51">Увеличаване на  енергия и качване на мускулна маса</purpose>
+        <purpose international_code="K04">Мускулната издържливост</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>

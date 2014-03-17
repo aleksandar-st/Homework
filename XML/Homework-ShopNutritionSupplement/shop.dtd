@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT shop ( supplements, types, purposes, packings_types ) >
+	
+    <!ELEMENT supplements ( supplement+ ) >
+		<!ELEMENT supplement ( name, price, rating?, image?, quantity, taste, content, description, brand, packings ) >
+			<!ATTLIST supplement 	id               ID            #REQUIRED
+			                                            type 	   IDREFS  #REQUIRED
+			                                            purpose  IDREFS  #REQUIRED >
+            <!ELEMENT name ( #PCDATA ) >
+            <!ELEMENT price ( #PCDATA ) >
+            <!ELEMENT rating ( #PCDATA ) >
+            <!ELEMENT image ( #PCDATA ) >
+            <!ELEMENT quantity ( #PCDATA ) >
+            <!ELEMENT taste ( #PCDATA ) >
+            <!ELEMENT content ( material+ ) >
+                <!ELEMENT material ( material_name, value, unit ) >
+                    <!ELEMENT material_name ( #PCDATA ) >
+	     <!ELEMENT value ( #PCDATA ) >
+                    <!ELEMENT unit ( #PCDATA ) >
+            <!ELEMENT description ( #PCDATA ) >
+            <!ELEMENT brand ( #PCDATA ) >
+            <!ELEMENT packings ( packing, measurement_unit, servings ) >
+                <!ATTLIST packings packing_types_id IDREFS #REQUIRED >
+                <!ELEMENT packing ( #PCDATA ) >
+                <!ELEMENT measurement_unit ( #PCDATA ) >
+                <!ELEMENT servings ( #PCDATA ) >
+
+    <!ELEMENT types ( type+ ) >
+        <!ELEMENT type ( #PCDATA ) >
+            <!ATTLIST type type_id ID #REQUIRED >
+
+    <!ELEMENT purposes ( purpose+ ) >
+        <!ELEMENT purpose ( #PCDATA ) >
+            <!ATTLIST purpose international_code ID	#REQUIRED >
+            
+    <!ELEMENT packings_types ( packing_types+ ) >
+        <!ELEMENT packing_types ( #PCDATA ) >
+            <!ATTLIST packing_types pid ID #REQUIRED >

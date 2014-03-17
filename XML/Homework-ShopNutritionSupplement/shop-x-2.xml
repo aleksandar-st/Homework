@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR69874512" type="P" purpose="P34 V47">
+            <name>Нитро голд</name>
+            <price>50.00</price>
+            <rating>8</rating>
+            <image>нитро.jpg</image>
+            <quantity>1</quantity>
+            <taste>кокос</taste>
+            <content>
+                <material>
+                    <material-name>протеин</material-name>
+                    <value>50</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Нитро голд съдържа , протеинова смес с 8 от най-добрите източници на протеини, които стимулират растежа и поддържането на мускулна маса. Нитро голд съдържа новата , специална комбинация от протеолитични ензими и пробиотици за улеснено храносмилане и усвояване.
+            </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="P01">
+                <packing>0.500</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>10 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR436987456" type="G" purpose="P34 KR24">
+            <name>Ирон мас</name>
+            <price>111.00</price>
+            <rating>10</rating>
+            <image>iron_mass.jpg</image>
+            <quantity>1</quantity>
+            <taste>щоколад</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>80</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>аминокиселини</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Ирон мас от серията Арнолд  е интелигентният начин да предизвикаш интензивен мускулен растеж, без това да доведе до натрупване на мазнини в тялото. Новата протеинова формула залага на висококачествената комбинация от хидролизиран телешки протеин,  аминокиселини.
+            </description>
+            <brand>Арнолд</brand>
+            <packings packing_types_id="P01">
+                <packing>1.000</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>10 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR45684921" type="P" purpose="P34 EN32">
+            <name>Изофлекс</name>
+            <price>107.00</price>
+            <rating>10</rating>
+            <image>isoflex.jpg</image>
+            <quantity>1</quantity>
+            <taste>ягода</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>50</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Изофлекс съчетава четири патентовани системи за усвояване. Съставките във всяка система работят в синхрон, за да се осигури висококачество и отличен вкус.
+            </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="P01">
+                <packing>1.000</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>20 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR87459621" type="VM" purpose="V47">
+            <name>Витамин Ц</name>
+            <price>25.00</price>
+            <rating>6</rating>
+            <image>vitaminC.jpg</image>
+            <quantity>1</quantity>
+            <taste>лимон</taste>
+            <content>
+                <material>
+                    <material_name>витамин Ц</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Витамин С играе важна роля в жизнените процеси на организма като универсален активатор на клетъчния метаболизъм. Човешкият организъм не може да синтезира Витамин С и затова трябва да си го доставя чрез храната отвън. Витамин С подпомага възстановителните и защитни процеси в организма. Влияе благоприятно на функциите на централната нервна система, стимулира дейността на ендокринните жлези, подобрява усвояването на калция и желязото и нормалното кръвообразуване, подпомага профилактиката на различни видове вирусни и бактериални инфекции и участва в поддържането на здрава имунна система.
+           </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="Т02">
+                <packing>50</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>25 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR87459635" type="K" purpose="KR24">
+            <name>Креатин транспорт</name>
+            <price>38.00</price>
+            <rating>7</rating>
+            <image>creatine_transport.jpg</image>
+            <quantity>1</quantity>
+            <taste>лимон</taste>
+            <content>
+                <material>
+                    <material_name>креатин хидрохлорид</material_name>
+                    <value>15</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>калциум</material_name>
+                    <value>5</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креатинът  е важен, защото дава енергия за бързи мускулни движения, тъй като участва в синтеза на главния енергоносител - АТФ. Когато Креатин транспорт се приема с прости въглехидрати, той се усвоява много по-бързо. Поради тази причина в състава на продукта са включени и рибоза, декстроза и малтодекстрин. Присъства и комбинация от аминокиселини, витамини, минерали и антиоксиданти.            
+            </description>
+            <packings packing_types_id="P01">
+                <packing>0.600</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>30 дози</servings>
+            </packings>  
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international_code="P34">Увеличава мускулния обем</purpose>
+        <purpose international_code="A78">Подобрява производителността и високата интензивност на тренировката</purpose>
+        <purpose international_code="KR24">Увеличава мускулната маса, силата и размерите</purpose>
+        <purpose international_code="V47">Намалява мускулните болки</purpose>
+        <purpose international_code="EN32">Производство на азотен оксид, напомпване на мускулите</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR48568461" type="P" purpose="K45 P08 G84">
+            <name>Матрикс</name>
+            <price>88.00</price>
+            <rating>7</rating>
+            <image>matrix.jpg</image>
+            <quantity>1</quantity>
+            <taste>шоколад</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Матрикс представлява протеинова матрица (неколкокомпонентен протеин). При производството на този продукт са използвани само най-висококачествени източници на протеин - ултрафилтриран суроватъчен протеин, ултрафилтриран млечен протеин, неденатуриран яйчен албумин и глутаминови пептиди. За да бъде този протеин неповторим, освен на безупречния профил. Смело може да се твърди, че това е най-вкусният протеин на пазара. След безбройни опити и тестове ние ви предлагаме четири превъзходни вкуса.С какво Матрикс е по-различен от останалите протеинови продукти на пазара?Отговорът е лесен - протеиновата матрица. Матрикс е комбинация от три различни протеинови източника с различен профил и различна усвояемост - суроватъчен протеин, казеин и яйчен албумин.Защо протеинова матрица, вместо един протеинов източник - например суроватъчен протеин?Трите най-качествени източници на протеин са суроватъчен, казеин и яйчен. Но все пак нито един от тези източници няма съвършените показатели. Всеки източник на протеин има своите силни и слаби страни. Яйчният протеин например има най-добър аминокиселинен профил, но цената му е значително по-висока. Суроватъчният протеин се усвоява най-бързо от тялото и има имуностимулиращ ефект. Казеинът се усвоява най-бавно, но осигурява постоянен приток на аминокиселини в тялото за продължителен период от време. Силата на Матрикс е именно в комбинирането на тези три  протеинови източника. По този начин получавате силните страни на всеки вид протеин и снижавате до минимум недостатъците му.
+            </description>
+            <brand>Синтракс</brand>
+            <packings packing_types_id="P01">
+                <packing>2.225</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>22 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR48125315" type="G" purpose="AK09 P08 G84">
+            <name>Мутант мас</name>
+            <price>140.00</price>
+            <rating>10</rating>
+            <image>mutant_mass.jpg</image>
+            <quantity>1</quantity>
+            <taste>шоколад</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>40</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>въглехидрати</material_name>
+                    <value>60</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Това е завършения продукт за чист мускул. МутантМас е сериозна формула, създадена само с здраво работещи атлети, които искат сила, абсолютни размери и пак сила.Ако наистина искате плочки от чиста мускулна маса по-бързо от всякога, то МутантМас е отговорът. Мутант Мас – Наука Мутант Мас беше разработен при 2 годишно изследване и се основава на здрава и доказана наука.По важно е, че завършената формула на Мутант Мас е също тествана в залата, където беше поставен в истински културисти и силови атлети.
+            </description>
+            <brand>Мутант</brand>
+            <packings packing_types_id="P01">
+                <packing>5.450</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>50 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR45684921" type="AB" purpose="P08 K45 G84 AB65">
+            <name>Хипер</name>
+            <price>69.00</price>
+            <rating>9</rating>
+            <image>hyper.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>калциум</material_name>
+                    <value>15</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Енергия без екстракт от здравец. Небезизвестен факт е, че екстракта от масло от здравец съдейства за свиване на кръвоносните съдове, което от своя страна има негативно влияние върху постиженията ви. Не само, че не сте напомпани, но употребата му води до недостиг на хранителни вещества и кислород в мускулите. Засилва анаболните процесиТестостеронът е главният мъжки полов хормон, който има голямо въздействие върху мускулната маса и агресията. Ако целта ви е да сте супер концентритани и да вдигате сериозни тежести Хипер е вашият правилен избор. *
+            </description>
+            <brand>БСН</brand>
+            <packings packing_types_id="P01">
+                <packing>0.315</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>21 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR78936845" type="VM" purpose="VM13">
+            <name>Омега3</name>
+            <price>20.00</price>
+            <rating>6</rating>
+            <image>omega3.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>витамин Е</material_name>
+                    <value>15</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Oмега3 мастни киселини са ненаситени поликиселини и се намират в изобилие в рибените масла. Те имат голямо значение за здравето и доста често са една от последните добавки, които хората смятат да взимат.
+            </description>
+            <brand>Рефлекс</brand>
+            <packings packing_types_id="Т02">
+                <packing>90</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>45 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR78598441" type="K" purpose="P08 K45 VM13 E02 AB39 K38">
+            <name>Креаформ</name>
+            <price>37.00</price>
+            <rating>6</rating>
+            <image>creaform.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокоал</taste>
+            <content>
+                <material>
+                    <material_name>креатин хидрохлорид</material_name>
+                    <value>15</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>глутамин</material_name>
+                    <value>5</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Приема на креатин се е доказал, като повече от ефективен, понеже допринася за уголемяването на клетката. Разговорното “уголемяване” произхожда от термина “хидрация”, което най-първично значи просмукване на вода в самата клетка. Вече уголемяване на клетка е придобива малко по-друго значение, като вкарване на вода и хранителни елементи, в обичайно под формата на хранителни добавки.Приемайки вода и придружаващите я хранителни елементи, клетката развива по-едър и “по-цялостен” вид. И по-важното в случая е доказаното, че заредените мускулни клетки произвеждат повече енергия, водещо само по себе си до съкръщаване при по-големи натоварвания. В резултат, от което се констатира значително повишаване на сила и растеж. Понятието “уголемяване” на клетката е свързано с креатина.
+            </description>
+            <brand>Примафорс</brand>
+            <packings packing_types_id="P01">
+                <packing>0.400</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>20 дози</servings>
+            </packings>  
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international_code="P08">Максимално увеличава чистата мускулатура</purpose>
+        <purpose international_code="AK09">Активира умствената дейност, фокусът и издръжливостта</purpose>
+        <purpose international_code="K45">Доставка на кислород към мускулната тъкан</purpose>
+        <purpose international_code="VM13">Пред- и след- тренировъчно захранване</purpose>
+        <purpose international_code="G84">Мускулен растеж</purpose>
+        <purpose international_code="AB65">Сила, мощ, издръжливост и тренировъчен капацитет</purpose>
+        <purpose international_code="E02">Производство на азотен оксид, напомпване на мускулите</purpose>
+        <purpose international_code="AB39">Мускулна издръжливост и устойчивост на мускулна умора</purpose>
+        <purpose international_code="K38">Ускорява възстановяването</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>

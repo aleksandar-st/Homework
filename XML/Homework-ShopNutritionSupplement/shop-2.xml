@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR78896541" type="P" purpose="P25 K87">
+            <name>Ултра</name>
+            <price>123.00</price>
+            <rating>8</rating>
+            <image>ultra.jpg</image>
+            <quantity>1</quantity>
+            <taste>ягода</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Ултра протеинот комбинира четири различни протеинови източника (казеин, яйчен албумин, суроватков протеин и глутаминови пептиди) в един разнообразен продукт. Казеинът, най-големият протеинов източник , е бавнодействащ протеин, който се абсорбира в тялото за продължителен период от време. Това не само дава на тялото продължителен източник на аминокиселини, но и създава дълготрайно усещане за заситеност. Уникалният състав е допълнен от суроватков протеин, яйчен албумин и глутаминови пептиди. Суроватката е бързодействащ протеинов източник, който поддържа имунната система и дава на тялото тъканно изграждащ заряд аминокиселини. Яйченият албумин е всеобхватен, средно-разпръскващ се протеин, който идеално подпомага растежа и поддържането на безмастната мускулна тъкан с отличен аминокиселинен профил и изобилие от фактори на растежа. И накрая, глутаминовите пептиди са протеинов източник, ненадминат в способността си да предоставя биодостъпен глутамин, един от най-важните изграждащи блока в човешкото тяло.
+            </description>
+            <brand>Универсал</brand>
+            <packings packing_types_id="P01">
+                <packing>2.225</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>22 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR48965411" type="G" purpose="K87 G89">
+            <name>Сириъс мас</name>
+            <price>125.00</price>
+            <rating>10</rating>
+            <image>serious_mass.jpg</image>
+            <quantity>1</quantity>
+            <taste>банан</taste>
+            <content>
+                <material>
+                    <material_name>въглехидрати</material_name>
+                    <value>60</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>40</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                За покачване на теглото се изисква значително количество калории. Често солидният прием на калории си е истинско предизвикателство за мнозина, които полагат усилия да увеличат мускулната си маса. Силно изразеният метаболизъм, недостатъчният апетит и забързаното ежедневие възпрепятстват набавянето на нужното ви количество калории, особено ако приемате необработени храни. Със Сириъс мас, Оптимум нутришън ви предлагат лесен начин да покачите мускулната си маса.
+            </description>
+            <brand>Оптимум нутришън</brand>
+            <packings packing_types_id="P01">
+                <packing>5.450</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>50 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR24796548" type="AB" purpose="AB03">
+            <name>Но-хплоде</name>
+            <price>114.00</price>
+            <rating>10</rating>
+            <image>no_hplode.jpg</image>
+            <quantity>1</quantity>
+            <taste>лимонада</taste>
+            <content>
+                <material>
+                    <material_name>калциум</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>содиум</material_name>
+                    <value>30</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Възрастни между 18-50 годишна вързраст, които търсят приток на енергия, сила, издържливост и мускулно развитие по време на тренировка и/или на физическо натоварване от всякакво естество.Смесете 1 мерителна лъжица със 150-180мл. студена вода. Можете да променяте количеството на водата, за да постигнете желаният от вас вкус, плътност. Изчакайте 30 мин., за да видите,как ще се почувствате и дали това е вашата доза. При необходимиост след 30мин. консумирайте още 1 мерителна лъжица смесена с 150-180мл. студена вода.
+            </description>
+            <brand>БСН</brand>
+            <packings packing_types_id="P01">
+                <packing>1.130</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>25 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR14369875" type="VM" purpose="VM23 E2 K09">
+            <name>Анимал</name>
+            <price>59.00</price>
+            <rating>7</rating>
+            <image>animal.jpg</image>
+            <quantity>1</quantity>
+            <taste>ябълка</taste>
+            <content>
+                <material>
+                    <material_name>аминокиселини</material_name>
+                    <value>6</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>магнезиум</material_name>
+                    <value>7</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>карнитин</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Анимал е сериозна формула, предназначена най-вече за сериозни атлети. Усилените ежеседмични тренировки поставят тялото ни под сериозен стрес. Нуждаем се от повече витамини и минерали и повече антиоксиданти заради повишеното образуване на свободни радикали.Черният ни дроб работи по-усилено, за да смогне на енергийните изисквания, както и да помогне за филтрирането на храната, която ядем.
+            </description>
+            <brand>Универсал</brand>
+            <packings packing_types_id="Т02">
+                <packing>44</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>22 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR78474891" type="K" purpose=" K09 K87 AB04 AK96">
+            <name>Кинг</name>
+            <price>37.00</price>
+            <rating>6</rating>
+            <image>king.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокоал</taste>
+            <content>
+                <material>
+                    <material_name>креатин хидрохлорид</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>л-лизин</material_name>
+                    <value>2</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>алфа липоик ацид</material_name>
+                    <value>3</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>магнезиум</material_name>
+                    <value>1</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>калциум</material_name>
+                    <value>2</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>карнитин</material_name>
+                    <value>2</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креатин хидрохлорид е най-качествената, позната форма на креатин, тя представлява ултра био-концентриран вариант на веществото! Докато стабилността при различните форми не предизвиква проблеми, то разтворимостта му, влияеща пряко върху нивото на оползотворяване от организма, се явява значително препятствие! При недостатъчно разтваряне на активното вещество, то не прониква в кръвоносната система. Креатин хидрохлорид притежава 59 пъти по-висока степен на разтворимост в сравнение с креатин монохидрат (приблизително 89 г. срещу 1.5 г. на 100 мл. течност)! Научни изследвания сочат, че био-достъпността е с 60% по-висока, както и реалната концентрация в кръвта при употреба на креатин  хидрохлорид в сравнение с монохидрата. Това превъзходство се отнася и до молекулярната стабилност, разтворимост и проникване в кръвоносната система. Креатинът сам по себе си не предизвиква задържане на вода, докато креатин монохидрат се отличава с подобен ефект, който се разпростира върху цялото тяло и в допълнение води до затормозяване на организма с излишни количества от елемента.
+            </description>
+            <brand>Сцитец</brand>
+            <packings packing_types_id="P01">
+                <packing>0.750</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>40 дози</servings>
+            </packings>
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international_code="P25">Изграждане на чисти мускули без мазнини</purpose>
+        <purpose international_code="AK96">Увеличава умствения фокус и издръжливостта</purpose>
+        <purpose international_code="K87">Увеличава обема на мускулните клетки</purpose>
+        <purpose international_code="VM23">Приемане на необходимите за деня хранителни вещества</purpose>
+        <purpose international_code="G89">Стимулира покачването на тегло</purpose>
+        <purpose international_code="AB03">Стимулира енергийните нива и нивата на физическо изпълнение</purpose>
+        <purpose international_code="E2">Увеличаване на  васкуларността и напомпването</purpose>
+        <purpose international_code="AB04">Повишава силата и експлозивната мощ</purpose>
+        <purpose international_code="K09">Ускорява възстановяването</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>

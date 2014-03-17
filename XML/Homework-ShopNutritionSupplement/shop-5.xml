@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR01021324" type="G" purpose="P06 G97">
+            <name>Реал мас</name>
+            <price>135.00</price>
+            <rating>8</rating>
+            <image>real_mass.jpg</image>
+            <quantity>1</quantity>
+            <taste>ягода</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Реал мас съдържа висококачествени калории, за да ви помогне да изградите нова мускулна маса. Новата формула на Реал мас включва пробиотици, които помагат на протеина да се съхрани при производството и стомашните киселини, също така  помага за увеличаването на добрите бактерии във вашата храносмилателна система, както и за високото качество на калориите за РЕАЛЕН мускулен растеж.Реал мас е добър и в набавянето на калории, но добавянето на калории от качествени източници ви дава много по-добра полза и ефект, сравнено с калории от лоши източници. Реал мас е всичко от което имате нужда за правилно възтановяване  и покачване на мускулна маса, той съдържа всико което е неоходимо за  един наистина страхотен гейнър.
+            </description>
+            <brand>Гаспари</brand>
+            <packings packing_types_id="P01">
+                <packing>5.000</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>50 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR01036834" type="AK" purpose="P06 E37 K78">
+            <name>Амино макс</name>
+            <price>48.00</price>
+            <image>amino_max.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>аминокиселини</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Тази уникална иновативна формула  предлага на запознатия потребител един много полезен и усвояем продукт, който набавя широк спектър от най-важните и ефективни градивни материали за растежа и поддържането на скелетната мускулна тъкан и маса. Хидролизираният протеин използван в Амино макс е богат на ди и трипептиди, които помагат за бързото усвояване и снабдяване на мускулите с необходимите вещества. Левцинът  е крайно необходима аминокиселина, което означава, че организмът не може сам да я произведе; затова тя трябва да се набави външно от хранителен източник или чрез диетична хранителна добавка, като Амино макс.
+            </description>
+            <brand>Гаспари</brand>
+            <packings packing_types_id="P01">
+                <packing>0.450</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>22 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR10789243" type="K" purpose="AK36 G97 K78">
+            <name>Креа бомб</name>
+            <price>45.00</price>
+            <rating>10</rating>
+            <image>crea_bomb.jpg</image>
+            <quantity>1</quantity>
+            <taste>лимон</taste>
+            <content>
+                <material>
+                    <material_name>креатин</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креа бомб ще зареди мускулните ти клетки с всяка по-значима версия на креатина. Тази формула включва някои от „двойно-действащите” креатинови компоненти, където креатина е химически свързан с други субстанции, които имат силни ергогенни свойства, т.е. подобряват значително издръжливостта и работоспособността.
+            </description>
+            <brand>Сцитец</brand>
+            <packings packing_types_id="P01">
+                <packing>0.660</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>33 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR31036214" type="K" purpose="AK36 K58 AB47">
+            <name>Креатестон</name>
+            <price>51.00</price>
+            <rating>7</rating>
+            <image>createston.jpg</image>
+            <quantity>1</quantity>
+            <taste>череша</taste>
+            <content>
+                <material>
+                    <material_name>креатин</material_name>
+                    <value>15</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>глутамин</material_name>
+                    <value>5</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креатестон е нашият евтин мускулен строител от типа всичко в едно, с много от познатите до момента ефективни хранителни вещества и изграждащисубстрати за максимална и естественасила, събрани в един продукт.За разлика от другите два варианта, Креатестон има по-високо съдържание на протеини и въглехидрати и не съдържа толкова много ергогеници (силови модулатори). Високото съдържание на въглехидрати означава, че можете да постигнете много висока ефективност - за тези спортисти, които не са предразположени към силно тяло (трудно, но нормално трупащи) или се намират извън диетната фаза и нямат ограничение върху приема на въглехидрати.
+            </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="Т02">
+                <packing>60</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>20 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR14530486" type="P" purpose="P06 AK36 AB47">
+            <name>Пауър</name>
+            <price>24.00</price>
+            <rating>7</rating>
+            <image>power.jpg</image>
+            <quantity>1</quantity>
+            <taste>ванилия</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>50</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Пауър протеин е продуктът, от който се нуждае всеки сериозен атлет. Уникалната му формула гарантира големи резултати. Благодарение на балансираната комбинация от висококачествен протеин, витамини и минерали, Вие ще постигнете Вашите цели докато тренирате усърдно. Ефектът от използването на Пауър протеин е оценен в цял свят от множество атлети.
+            </description>
+            <brand>Универсал</brand>
+            <packings packing_types_id="P01">
+                <packing>0.454</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>10 дози</servings>
+            </packings>
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international_code="P06">Насърчава растежа на мускулна маса</purpose>
+        <purpose international_code="AK36">Подобрява възстановяването</purpose>
+        <purpose international_code="K58">Намалява умората</purpose>
+        <purpose international_code="VM09">Нормализира кръвното налягане</purpose>
+        <purpose international_code="G97">Покачване на мускулна маса</purpose>
+        <purpose international_code="AB47">Прилив на чиста енергия</purpose>
+        <purpose international_code="E37">Засилена концентрация</purpose>
+        <purpose international_code="AB49">Увеличаване на  енергия и качване на мускулна маса</purpose>
+        <purpose international_code="K78">Повишава енергията</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>

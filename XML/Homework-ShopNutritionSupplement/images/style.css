@@ -1,0 +1,138 @@
+
+/* Top Elements */
+* { margin: 0; padding: 0; outline: 0 }
+
+body {
+	background: url("../images/background.jpg") repeat 0 0 #828282 ;
+	font: 14px Verdana, sans-serif;
+	color: #6B6B6B; 
+	text-align: center;	
+}
+
+/* headers */
+h1, h2, h3 {
+	font-family: Arial, Sans-serif;
+	font-weight: Bold; 	
+	padding: 10px;		
+	color: #969696;	
+}
+h1 {
+	font-size: 30px;		
+}
+
+/* Paragraph */
+p { 
+	padding: 12px 10px;
+    color: #f5f5f5	
+}
+
+/* Lists */
+ul, ol {
+	margin-top: 10px;
+	margin-left: 0;	
+}
+ul { list-style: none; }
+
+
+
+/* images */
+img {
+	background: #FAFAFA;
+    border: 1px solid #E4E4E4;
+	padding: 8px;
+	width: 300px;
+	height: 300px;
+	float: left; 
+	margin-right: 10px;
+}
+
+#wrapper {
+	position: relative;
+	width: 952px;
+	margin: 40px auto 30px auto;
+	text-align: left;	
+}
+#section {
+	clear: both;	
+	float: left;	
+	width: 952px;						
+	padding: 25px 0 60px 0; 
+	background: #1f1f1f;	
+}
+header {
+	
+	background: #1f1f1f;
+	width: 952px;
+	height: 245px;			
+	padding: 0;
+	margin-bottom: 20px;	
+}
+
+h1 {
+	padding-top: 100px;
+	padding-left: 80px;
+	font: bold 50px  Arial, Sans-serif;
+	color: #345574;
+	left: 320px;
+	top: 210px;
+}
+
+/* Main Column */
+#main {
+	float: left;
+	width: 535px;
+	padding: 0; margin: 0 0 0 40px;
+	display: inline;
+	width: 860px;	
+}
+#main h2 {
+	font: bold 35px  Arial, Sans-serif;
+	color: #345574; 
+	padding: 10px 0 5px 5px; 	
+	margin-left: 5px;		
+	letter-spacing: -2px;
+	border-bottom: 1px solid #E4F2C8; 
+	text-align: center;	
+}
+
+#main h3 {
+	font: bold 20px  Arial, Sans-serif;
+	color: #969696; 
+	padding: 10px 0 5px 5px; 	
+	margin-left: 5px;		
+	letter-spacing: -2px;
+	border-bottom: 1px solid #E4F2C8; 
+	clear: both;
+	letter-spacing: 0;	
+}
+#main div {
+	margin-left: 10px; 
+	margin-top: 5px;
+}
+.info{
+	color: #969696;
+	text-align: right; 
+}
+.description-info{
+	text-align: justify;
+}
+.price-info{
+    text-align: right; 
+    font-weight: bold; 
+    font-size: 16px;
+}
+
+
+button{
+	width: 100px;
+	height: 40px;
+	font-weight: bold;
+	background: #962613;
+	border-radius: 5px;
+	color: #fff;
+	float: right;
+	text-transform:uppercase;
+}
+.content-value{
+	visibility: hidden;
+}

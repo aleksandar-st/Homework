@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR15698745" type="G" purpose="P51 VM097">
+            <name>Маркед мас</name>
+            <price>57.00</price>
+            <rating>6</rating>
+            <image>marked_mass.jpg</image>
+            <quantity>1</quantity>
+            <taste>ягода</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <brand>ГНЦ</brand>
+            <packings packing_types_id="P01">
+                <packing>1.135</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>10 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR62478984" type="AK" purpose="P51">
+            <name>Аминос</name>
+            <price>67.00</price>
+            <rating>8</rating>
+            <image>aminos.jpg</image>
+            <quantity>1</quantity>
+            <taste>лимон</taste>
+            <content>
+                <material>
+                    <material_name>калциум</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Суроватъчните аминокиселини директно захранват тялото с необходимото количество аминокиселини. Aко се използва определено количество аминокиселини в комбинация с тежка тренировка, пептидите се използват за изграждане на мускула, а не се складират под формата на мазнини (протеинов синтез). Основният протеин в Суроватъчните Аминокиселини е биологично висококачествен суроватъчен протеин. Той се разгражда оптимално и аминокиселините могат бързо да се усвоят от мускулитеОписание на продукт.
+            </description>
+            <brand>Гаспари</brand>
+            <packings packing_types_id="P01">
+                <packing>60</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>30 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR98745632" type="K" purpose="AB79 AK09">
+            <name>Креа конг</name>
+            <price>38.00</price>
+            <rating>8</rating>
+            <image>creakong.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>креатин</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креатин монохидрат е готов източник на енергия за мускулите. Превръща се несъмнено в един от най-добрите продукти за повишаване на мускулната сила. Освен подсилване на мускулите и увеличаване на мускулната маса,  креатин монохидрат има енергизиращо действие и върху останалите части на тялото. Креатинът е био-молекула, която произвежда АТФ. Той е продукт, синтезиран в човешкото тяло, който се произвежда от черния дроб и се складира в мозъка, скелетната и сърдечна мускулатура и който служи като готов източник за производство на АТФ. Креатинът е ключово вещество, подпомагащо ускорено презареждане на АТФ в мускулите. По-голямо количество от него води до увеличено производство на енергия, което позволява на мускулите да работят по-дълго и при по-висока интензивност. Креатинът е повече от ергогенен хранителен елемент: той има уголемяващ ефект върху мускулите. Клетъчното увеличение или клетъчната хидратация включва свързване на водата с мускулните фибри. Тази връзка придава „напомпан” вид. Тъй като водата е свързана вътре в мускула, атлетите, използващи креатин, нямат „подпухнала” външност. С други думи, мускулите изглеждат по-големи, а същевременно се характеризират с повишена сила, енергия и издръжливост. Това им позволява да се възстановяват по-бързо и да разполагат с повече енергия за всяка тренировъчна сесия.
+            </description>
+            <brand>Мутант</brand>
+            <packings packing_types_id="P01">
+                <packing>0.500</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>25 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR348269175" type="K" purpose="AK09 AB24">
+            <name>Тотал кратин</name>
+            <price>29.00</price>
+            <rating>6</rating>
+            <image>total.jpg</image>
+            <quantity>1</quantity>
+            <taste>череша</taste>
+            <content>
+                <material>
+                    <material_name>таурин</material_name>
+                    <value>15</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>глутамин</material_name>
+                    <value>5</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Креатин монохидрат е готов източник на енергия за мускулите. Превръща се несъмнено в един от най-добрите продукти за повишаване на мускулната сила. Освен подсилване на мускулите и увеличаване на мускулната маса,  креатин монохидрат има енергизиращо действие и върху останалите части на тялото. Креатинът е био-молекула, която произвежда АТФ. Той е продукт, синтезиран в човешкото тяло, който се произвежда от черния дроб и се складира в мозъка, скелетната и сърдечна мускулатура и който служи като готов източник за производство на АТФ. Креатинът е ключово вещество, подпомагащо ускорено презареждане на АТФ в мускулите. По-голямо количество от него води до увеличено производство на енергия, което позволява на мускулите да работят по-дълго и при по-висока интензивност. Креатинът е повече от ергогенен хранителен елемент: той има уголемяващ ефект върху мускулите. Клетъчното увеличение или клетъчната хидратация включва свързване на водата с мускулните фибри. Тази връзка придава „напомпан” вид. Тъй като водата е свързана вътре в мускула, атлетите, използващи креатин, нямат „подпухнала” външност. С други думи, мускулите изглеждат по-големи, а същевременно се характеризират с повишена сила, енергия и издръжливост. Това им позволява да се възстановяват по-бързо и да разполагат с повече енергия за всяка тренировъчна сесия.
+            </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="Т02">
+                <packing>60</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>30 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR14530486" type="P" purpose="AK09 K98">
+            <name>Мулти протеин</name>
+            <price>69.00</price>
+            <rating>6</rating>
+            <image>multi.jpg</image>
+            <quantity>1</quantity>
+            <taste>банан</taste>
+            <content>
+                <material>
+                    <material_name>витамин Е</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+                <material>
+                    <material_name>витамин Ц</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Мулти протеинот комбинира четири различни протеинови източника  в един разнообразен продукт. Казеинът, най-големият протеинов източник , е бавнодействащ протеин, който се абсорбира в тялото за продължителен период от време. Това не само дава на тялото продължителен източник на аминокиселини, но и създава дълготрайно усещане за заситеност. Уникалният състав е допълнен от суроватков протеин, яйчен албумин и глутаминови пептиди. Суроватката е бързодействащ протеинов източник, който поддържа имунната система и дава на тялото тъканно изграждащ заряд аминокиселини. 
+            </description>
+            <brand>Универсал</brand>
+            <packings packing_types_id="P01">
+                <packing>1.000</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>50 дози</servings>
+            </packings>
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international-code="P51">Потиска мускулната умора</purpose>
+        <purpose international-code="AK09">Подобрява възстановяването</purpose>
+        <purpose international_code="K98">Предпазване от загуба на мускулна маса</purpose>
+        <purpose international_code="VM097">Поддържка на киселинния баланс в организма</purpose>
+        <purpose international_code="AB24">Подобрява физическата активност</purpose>
+        <purpose international_code="AB79">Бързо възстановяване след тренировка</purpose>
+        <purpose international_code="K48">Повишава енергията</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>

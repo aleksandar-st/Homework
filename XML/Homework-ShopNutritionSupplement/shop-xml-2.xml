@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<supplements>
+   <supplement name="Ултра" rating="8">
+      <brand>Универсал</brand>
+      <price>123.00</price>
+      <purpose>Изграждане на чисти мускули без мазнини, 
+                            Увеличава обема на мускулните клетки, 
+                            </purpose>
+   </supplement>
+   <supplement name="Сириъс мас" rating="10">
+      <brand>Оптимум нутришън</brand>
+      <price>125.00</price>
+      <purpose>Увеличава обема на мускулните клетки, 
+                            Стимулира покачването на тегло, 
+                            </purpose>
+   </supplement>
+   <supplement name="Но-хплоде" rating="10">
+      <brand>БСН</brand>
+      <price>114.00</price>
+      <purpose>Стимулира енергийните нива и нивата на физическо изпълнение, 
+                            </purpose>
+   </supplement>
+   <supplement name="Анимал" rating="7">
+      <brand>Универсал</brand>
+      <price>59.00</price>
+      <purpose>Приемане на необходимите за деня хранителни вещества, 
+                            Увеличаване на  васкуларността и напомпването, 
+                            Ускорява възстановяването, 
+                            </purpose>
+   </supplement>
+   <supplement name="Кинг" rating="6">
+      <brand>Сцитец</brand>
+      <price>37.00</price>
+      <purpose>Увеличава умствения фокус и издръжливостта, 
+                            Увеличава обема на мускулните клетки, 
+                            Повишава силата и експлозивната мощ, 
+                            Ускорява възстановяването, 
+                            </purpose>
+   </supplement>
+</supplements>

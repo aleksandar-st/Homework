@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop SYSTEM "file:/C:/Users/user/Desktop/xml/shop.dtd">
+<shop>
+    <supplements>
+        <supplement id="HR40012841" type="P" purpose="P75 VM90 G60 E10 K99">
+            <name>Протеин изолат</name>
+            <price>114.00</price>
+            <rating>8</rating>
+            <image>isolate.jpg</image>
+            <quantity>1</quantity>
+            <taste>ванилия</taste>
+            <content>
+                <material>
+                    <material_name>протеин</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Протеин изолат е една перфектната добавка към тренировъчен режим за сила и издръжливост. Всеки грам съдържа повече протеин и по-малко мазнини и въглехидрати от който и да било друг суроватъчен продукт. Протеин изолат е супер качествен суроватъчен протеин с перфектна усвояемост.
+            </description>
+            <brand>Мех</brand>
+            <packings packing_types_id="P01">
+                <packing>2.225</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>22 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR48698715" type="G" purpose="P75 AK40">
+            <name>Хипер мас</name>
+            <price>24.00</price>
+            <rating>6</rating>
+            <image>hyper_mass.jpg</image>
+            <quantity>1</quantity>
+            <taste>шоколад</taste>
+            <content>
+                <material>
+                    <material_name>въглехидрати</material_name>
+                    <value>100</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Хипер мас е идеалното решение за начинаещи спортисти, които биха искали да прибавят към дневната си диета допълнителни калории и протеини, за да увеличат чистата си мускулна маса. Хипер мас  увеличава силата на мускулите и обема на клетката до максималните и размери.
+            </description>
+            <brand>Биотеч</brand>
+            <packings packing_types_id="P01">
+                <packing>1.000</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>10 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR74586921" type="AB" purpose="AK40 G60 AB20">
+            <name>Джак3д</name>
+            <price>92.00</price>
+            <rating>10</rating>
+            <image>jack3d.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>аргинин нитрат</material_name>
+                    <value>10</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Най-ексклузивните съставки с конкретни цели, за да донесат максимални резултати при минимално дозиране. Тази технология на съставките предлага истински мощен удар!Тренирайте, както не сте тренирали преди!С Джак3д тялото Ви се подпалва от най-свирепата и безмилостна тренировка, като след това мускулите Ви са напомпани и толкова заредени, че дори няма да повярвате!
+            </description>
+            <brand>УСП</brand>
+            <packings packing_types_id="P01">
+                <packing>0.145</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>15 дози</servings>
+            </packings>
+        </supplement>
+        <supplement id="HR76984895" type="VM" purpose="P75 K50 VM90 E10 K99">
+            <name>Опти мен</name>
+            <price>56.00</price>
+            <rating>6</rating>
+            <image>opti_men.jpg</image>
+            <quantity>1</quantity>
+            <taste>портокал</taste>
+            <content>
+                <material>
+                    <material_name>витамин Д</material_name>
+                    <value>4</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Витамините и минералите, заедно с другите жизнено-важни хранителни вещества, са незаменими градивни елементи в човешкия организъм. Освен тяхната основополагаща роля, те отговарят и за енергийните нива, жизнеността и издръжливостта на тялото. Опти мен представлява цялостна система за усвояване на хранителните вещества.
+            </description>
+            <brand>Oптимум нутришън</brand>
+            <packings packing_types_id="Т02">
+                <packing>180</packing>
+                <measurement_unit>таб</measurement_unit>
+                <servings>30 дози</servings>
+            </packings>            
+        </supplement>
+        <supplement id="HR78423641" type="K" purpose="K50">
+            <name>Креа трикс</name>
+            <price>53.00</price>
+            <image>crea_trix.jpg</image>
+            <quantity>1</quantity>
+            <taste>лимон</taste>
+            <content>
+                <material>
+                    <material_name>креатин хидрохлорид</material_name>
+                    <value>20</value>
+                    <unit>г</unit>
+                </material>
+            </content>
+            <description>
+                Използвайки креатин комплекса Креа трикс, тялото ви ще натрупва дори повече енергия, която ще се съхранява в мускулите Ви. Ще изпитате и увеличена сила и издръжливост. Сравнен със стандартния креатин, креатин комплекса Креа трикс може да гарантира на тялото ви по-бързи резултати. Формулата подпомага и по-лесната преработка на въглехидратите, така че да не се налага да се тревожите за стомашни болки или подуване, когато приемате тази добавка. В случай, че искате да натрупате по-големи мускули по най-бързия и естествен възможен начин, Креа трикс е именно добавката, която отговаря на нуждите ви.
+            </description>
+            <brand>Амикс</brand>
+            <packings packing_types_id="P01">
+                <packing>0.824</packing>
+                <measurement_unit>кг</measurement_unit>
+                <servings>40 дози</servings>
+            </packings> 
+        </supplement>
+    </supplements>
+    <types>
+        <type type_id="P">Протеини</type>
+        <type type_id="AK">Аминокиселини</type>
+        <type type_id="K">Креатини</type>
+        <type type_id="VM">Витамини и минерали</type>
+        <type type_id="G">Гейнъри</type>
+        <type type_id="AB">Азотни бустери</type>
+        <type type_id="E">Енергийни продукти</type>
+    </types>
+    <purposes>
+        <purpose international_code="P75">Изгражда и поддържа безмастни мускули</purpose>
+        <purpose international_code="AK40">Максимизира производството на енергия</purpose>
+        <purpose international_code="K50">Стимулира хидратацията на мускулните клетки</purpose>
+        <purpose international_code="VM90">Пред- и след- тренировъчно захранване</purpose>
+        <purpose international_code="G60">Мускулен растеж</purpose>
+        <purpose international_code="AB20">По-голям обем, повече сила и мощ</purpose>
+        <purpose international_code="E10">Драматично повишаване на издръжливостта и подобряване на постиженията</purpose>
+        <purpose international_code="AB01">Увеличава експлозивната енергия</purpose>
+        <purpose international_code="K99">Ускорява възстановяването</purpose>
+    </purposes>
+    <packings_types>
+        <packing_types pid="P01">прах</packing_types>
+        <packing_types pid="Т02">таблетки</packing_types>
+        <packing_types pid="F03">течност</packing_types>
+    </packings_types>
+</shop>
