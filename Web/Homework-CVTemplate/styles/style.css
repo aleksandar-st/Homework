@@ -1,0 +1,275 @@
+html,body,div,header,h1,h2,h3,h4,h5,a,ul,li,img,section,p{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font: 16px "Georgia" sans-serif;
+    color: #000;
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p{
+    font-size: 16px;
+}
+li{
+    list-style-type: none;
+}
+
+#header,
+#nav,
+#section
+{
+    zoom:1;
+}
+#header:after,
+#nav:after,
+#section:after{
+    content: "";
+    clear: both;
+    display: block;  
+}
+
+/*Start header*/
+/*Start nav*/
+#nav{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;   
+    height: 60px;
+    background: #262b37;
+}
+    #nav ul{
+        text-align: center;
+    }
+    #nav ul li{
+        display: inline-block;
+    }
+    #nav li a{
+        color: #c3c8d6;
+        text-transform: uppercase;
+        line-height: 60px;        
+        padding: 0 30px;
+    }
+        #nav li:hover{
+            background: #1b1f29;
+        }
+/*End nav*/   
+/*End header*/
+
+/*Start section*/
+.wrapper{
+    margin: 0 auto;
+    width: 960px;
+} 
+.container{
+    padding-top: 100px;
+    padding-bottom: 100px;        
+}
+.heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+    .heading h2{
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .heading p{
+        color: #93959c;
+    }
+/*Start home*/
+#section{
+    margin-top: 60px;
+}
+#home{
+    background: #1b1f2b;
+}
+    #home-img{
+        opacity: 0.2;
+        width: 100%;
+        height: 100%;
+    }
+    #home-text{
+        position: absolute;
+        top: 40%;
+        left: 217px;
+        padding: 30px;
+        max-width:960px;
+        border: 1px solid #fff;
+        cursor: pointer;   
+    }
+        #home-text h1{
+            text-transform: uppercase;
+            font-size: 50px;
+            color: #fff;
+        }
+/*End home*/
+
+/*Start about-me*/
+#about-me{
+    min-height: 610px;
+    background: #00bdbd;
+    color: #fff;  
+}
+    #about-me-container .heading p{
+        color: #fff;
+    }
+    #about-me-container >p{
+        display: inline-block;
+        margin-right: 80px;     
+        width: 60%;
+        line-height: 25px;
+        text-align: justify;
+    }
+    #about-me-container >img{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+/*End about-me*/
+/*Start skills*/
+#skills{
+    min-height: 610px;
+    background: #e8edf0;    
+    color: #262b37;
+}
+    #skills-container .heading h2{
+        color: #1568A0
+    }
+    .skills-text{
+        display: inline-block;
+        width: 150px;
+        line-height: 35px;
+        text-transform: uppercase; 
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .progress-bar {
+        display: inline-block;
+        width: 805px;
+        height: 25px;
+        background: #e8edf0;
+    }
+    .progress-bar div {
+        height: 100%;
+        width: 0;
+        background: #1568A0;
+        border-radius: 5px;
+    }
+/*End skills*/
+/*Start experience*/
+#experience{
+    min-height: 610px;
+    background: #fff;
+    color: #262b37;
+}
+    #experience-container .heading h2{
+        color: #ff675f;
+    }
+    .experience-details{
+        margin-bottom: 10px;
+    }
+        .work{
+            display: inline-block;       
+            width: 125px;
+            margin-right: 25px;
+            border-right: 1px solid #e8edf0;
+        }
+        .work-year{  
+            position: relative;
+            width: 100px;
+            height: 100px;       
+            background: #ff675f;        
+            border-radius: 50%;       
+        }    
+            .work-date{
+                position: absolute;
+                top: 40px;
+                left: 15px;
+                color: #fff;
+            }   
+        .job-description{
+            position: absolute;
+            display: inline-block;     
+            padding: 30px;
+            background: #e8edf0;
+            width: 55%;
+        }
+        .job-description h4{
+            padding-bottom: 5px;
+        }
+/*End experience*/
+/*Start contacts*/
+#contact{
+    min-height: 610px;
+    background: #474d5d;   
+    color: #fff;
+}
+    #contact-container .heading h2{
+        color: #ff675f;
+    }
+    #contact-details h3{
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    #contact-details a{
+        color: #93959c;
+        padding-bottom: 15px;
+        line-height: 30px;
+    }
+    i{
+        padding-right: 20px;
+        width: 10px;
+    }
+/*End contacts*/
+/*End section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

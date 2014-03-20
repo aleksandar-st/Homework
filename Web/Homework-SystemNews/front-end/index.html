@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Сайт за новини</title>
+    <meta name="keywords" content="news, mma, boks">
+    <meta name="author" content="Aleksandar Stankovski">
+    <link rel="shurtcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>
+    <div id="message"></div>
+    <header id="header">
+        <h1 id="logo">
+            <a href="index.html" title="Почетна"><img src="images/logo.png" alt="Лого"></a>
+        </h1>
+        <div id="login-register-form">
+            <form action="" method="POST">
+                <input type="text" placeholder="Потребителско име" id="login-username" class="login-input-field"/>
+                <input type="password" placeholder="Парола" id="login-password" class="login-input-field"/>
+                <input type="submit" id="login-button" class="button" value="Вход">
+                <input type="button" id="registration-button" class="button" value="Регистрирай се">
+            </form>
+        </div>
+        <div id="logout-form">
+            <p id="welcome-text">Добре дошъл, google</p>
+            <input type="submit" id="logout-button" class="button" value="Изход">
+        </div>
+    </header>
+    <div id="wrapper">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Новини</a></li>
+                <li><a href="events.html">Събития</a></li>
+                <li><a href="#">Интервюта</a></li>
+                <li><a href="#">Снимки</a></li>
+                <li><a href="#">Клубове</a></li>
+            </ul>
+        </nav>
+        <section id="section">
+            <div id="gallary-register">
+                <div id="register-container">                                                 
+                    <div id="register-form"> 
+                        <div id="exit-registration-form" class="exit-button"><a href="#" title="Затвори">X</a></div> 
+                        <p id="register-form-text">Регистрирай се за да можеш да добавяш новини</p> 
+                        <form action="" method="POST">
+                            <input type="text" placeholder="Потребителско име" id="register-username" class="input-field"/>
+                            <input type="password" placeholder="Парола" id="register-password" class="input-field"/>
+                            <input type="submit" id="register-button" class="button" value="Регистрация">
+                        </form>
+                    </div>
+                </div>
+                <div id="gallary">
+                    <img class="gallary-images active" src="images/img1.jpg" alt="1">
+                    <img class="gallary-images" src="images/img2.jpg" alt="2">
+                    <img class="gallary-images last" src="images/img3.jpg" alt="3">
+                    <div id="next-images">
+                        <ul>
+                            <li><a href="#"><img class="gallary-next-images" src="images/thumb-img1.jpg" alt="1"></a></li>
+                            <li><a href="#"><img class="gallary-next-images" src="images/thumb-img2.jpg" alt="2"></a></li>
+                            <li><a href="#"><img class="gallary-next-images" src="images/thumb-img3.jpg" alt="3"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="main-content">
+                    <a href="#" id="last-news-button" class="content-button">Новини</a>
+                    <a href="#" id="add-news-button" class="content-button">Добави новина</a>
+                    <div id="news-container"></div>
+                    <div id="banner">
+                        <ul>
+                            <li><a href="#"><img class="banners" src="images/banner1.jpg" alt="Banner1"></a></li>
+                            <li><a href="#"><img class="banners" src="images/banner2.jpg" alt="Banner2"></a></li>
+                            <li><a href="#"><img class="banners" src="images/banner3.jpg" alt="Banner3"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="add-news-container">
+                    <div id="add-news-form">
+                        <div id="exit-add-news-form" class="exit-button"><a href="#" title="Затвори">X</a></div> 
+                        <p id="add-news-form-text">Въведете новина</p>
+                        <form action="" method="POST">
+                            <input type="text" placeholder="Заглавие" id="news-title" class="input-field"/>
+                            <textarea placeholder="Съдържание" id="news-content"></textarea>
+                            <input type="submit" id="add-button" class="button" value="Добави">
+                        </form>
+                    </div>
+                </div>
+                <div id="read-news-container"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@media only screen and (max-width : 768px){
+    body{
+        overflow-x:hidden;
+    }
+    .wrapper{
+		width: 748px;
+	}    
+	/*Start section*/
+    /*Start home*/
+	#home-text{
+		display: none;
+	}
+	/*End home*/
+	/*Start about-me*/
+    #about-me{
+        min-height: 960px;
+    }
+    #about-me-container >p{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+	#about-me-container >img{
+        position: relative;
+        left: 224px;
+	}
+	/*End about-me*/
+	/*Start skills*/
+    #skills{
+        min-height: 960px;
+    }
+	.progress-bar{
+		width: 590px;
+	}
+	/*End skills*/
+	/*Start experience*/
+    #experience{
+        min-height: 960px;
+    }
+	/*End experience*/
+    /*Start contacts*/
+    #contact{
+        min-height: 970px;
+    }
+    /*End contacts*/
+	/*End section*/
+}
+
+@media only screen and (max-width : 320px){
+    .wrapper{
+        width: 300px;
+    } 
+    /*Start header*/
+    /*Start nav*/
+    #nav{
+    	height: 129px;
+    }
+        #nav ul li{
+            display: block;
+            border-bottom: 1px solid #1b1f29;
+        }
+        #nav ul li:last-child{
+        	border-bottom: none;
+        }
+        #nav li a{
+            line-height: 25px;        
+        }
+    /*End nav*/
+    /*End header*/
+    /*Start section*/
+    #section{
+        margin-top: 129px;
+    }
+    .heading{
+        padding-bottom: 10px;
+    }
+    .heading h2{
+        font-size: 20px;
+    } 
+    /*Start about-me*/
+    #about-me{
+       min-height: 420px;
+    } 
+        #about-me-container >p{    
+            line-height: 17px;
+        }  
+        #about-me-container >img{
+            display: none;
+        }     
+    /*End about-me*/
+    /*Start skills*/
+    #skills{
+        min-height: 420px;
+    }
+        .skills-text{
+            display: block;
+            line-height: 17px;
+            font-size: 16px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+        }
+    /*End skills*/
+    /*Start experience*/
+    #experience{
+        min-height: 420px;
+    }
+        .work{      
+            width: 55px;
+            margin-right: 5px;
+        }
+        .work-year{  
+            width: 50px;
+            height: 50px;             
+        }
+            .work-date{
+                top: 5px;
+                left: 10px;
+            } 
+        .job-description{    
+            padding: 0;
+            width: 74%;
+        }
+        .job-description h4{
+            padding-bottom: 0;
+        }
+    /*End experience*/
+    /*Start contacts*/
+    #contact{
+        min-height: 420px;
+    }
+        #contact-details h3{
+            font-size: 18px;
+            padding-bottom: 0;
+        }
+        #contact-details a{
+            line-height: 17px;
+        }
+    /*End contacts*/
+}

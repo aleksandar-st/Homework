@@ -1,0 +1,385 @@
+html,body,div,header,h1,h2,h3,a,ul,li,img,section,p{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font: 16px "Georgia" sans-serif;
+    background: url("../images/background.jpg") repeat 0 0;
+    color: #fff;
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p{
+    font-size: 16px;
+}
+li{
+    list-style-type: none;
+}
+span{
+    color: #6685E0;
+    font-weight: bold;
+}
+#header,
+#nav,
+#section,
+#register-container,
+#gallary-register,
+#content
+{
+      zoom:1;
+}
+#header:after,
+#nav:after,
+#section:after,
+#register-container:after,
+#gallary-register:after,
+#content:after{
+    content: "";
+    clear: both;
+    display: block;  
+} 
+#message{
+    display: none;
+    min-height: 40px;
+    background: #ffd7d7;
+    border: 2px solid #df8f8f;
+}
+#message-text{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+.button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: #6d2421;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; 
+} 
+.input-field{
+    width: 865px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #6d2421;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 960px;
+} 
+/*Start header*/
+#header{
+    background: #231f20;
+    height: 75px;
+    margin-bottom: 30px;
+}
+    #logo{
+        float: left; 
+        margin-left: 200px;      
+    }
+        #logo img{
+            width: 200px;
+            height: 70px;
+        }
+    #login-register-form{
+        float: right;
+    }
+        .login-input-field{
+            width: 150px;
+            height: 30px;
+            margin-right: 20px;
+            margin-top: 20px;
+            border: 2px solid #6d2421;
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #registration-button{
+            width: 150px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    #logout-form{
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        display: none;
+    }
+       #welcome-text{
+        float: left;
+        margin-right: 20px;
+        font-weight: bold;
+        line-height: 35px;        
+       }
+/*End header*/
+/*Start nav*/
+#nav{
+    margin-bottom: 30px;
+    background: #231f20;
+}
+    #nav li{
+        display: inline-block;
+        float: left;
+        width: 190px;
+        height: 40px;
+        border-right: 2px solid #4f4e4e;      
+    } 
+    #nav li:last-child{
+        border-right: none;
+    }
+        #nav li:hover{
+            background: #6685E0;
+        } 
+       #nav a{
+            display: block;
+            text-align: center;
+            padding-top: 11px; 
+            padding-bottom: 11px;
+       }
+/*Endt nav*/
+/*Start section*/
+#gallary-register{
+    height: 400px;
+    margin-bottom: 30px;
+    background: #231f20;    
+}
+    #register-container{
+        padding: 20px;
+        display: none;
+    }
+        #register-form{
+            height: 320px;
+            padding: 20px;
+            background: #000;
+        }
+            .exit-button{
+                float: right;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            #register-form-text{
+                clear: both;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+    #gallary{
+        padding:20px;
+    }
+        .gallary-images{
+            width: 750px;
+            height: 360px;
+            float: left;
+            margin-right: 20px;
+        } 
+        .gallary-images{
+            display: none;
+        }
+        .active{
+            display: inline-block;
+        }   
+    .gallary-next-images{
+        width: 145px;
+        height: 104px;
+        margin-bottom: 20px;
+        opacity: 0.4;
+    }
+        .gallary-next-images:hover{
+            opacity: 1;
+        }
+#content{
+    height: 650px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #231f20;
+}
+    .content-button{
+        display: inline-block;
+        height: 30px;        
+        background: #6685E0;
+        border: 1px solid #fff;
+        border-radius: 5px;         
+        font-weight: bold; 
+        line-height: 30px;          
+        cursor: pointer; 
+    }
+    #last-news-button{        
+        width: 650px;
+        padding-left: 20px;
+    }
+    #add-news-button{
+        float: right;
+        width: 220px;
+        margin-left: 20px;
+        text-align: center;
+        display: none;
+    }
+    #banner{
+        float: right;
+        margin-top: 20px;
+    }
+        .banners{
+            margin-bottom: 20px;
+            width: 220px;
+        }
+#add-news-container{
+    display: none;
+}
+    #add-news-form{
+        height: 610px;
+        padding: 20px;
+        background: #000;
+    }
+        #add-news-form-text{
+            clear: both;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        #news-content{
+            width: 865px;
+            height: 430px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 20px;
+            border: 2px solid #6d2421;
+            border-radius: 5px;           
+        }
+        #add-button{
+            float: right;
+        }
+#news-container{
+    float: left;
+    margin-top: 20px;
+    width: 500px;
+    height: 595px;
+    overflow: auto;
+    border-left-color: #555555; 
+    border-left-width: medium; 
+    border-left-style: double;
+}
+    .list-news >li{
+        margin-left: 20px;
+        border-bottom-style: dotted;
+        border-bottom-color: #555555; 
+        border-bottom-width: medium;        
+    }
+        .list-news >li:last-child{
+            border-bottom: none;
+        }
+    .news{
+        display: inline-block;
+        width: 480px;
+        padding-top:10px; 
+        padding-bottom:10px;                  
+        font-size: 18px;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+        .news:hover{
+            color: #6685E0;
+        }  
+
+.read-more{
+    max-height: 610px;
+    padding: 20px;
+    background: #000;   
+}
+    .read-container-title{
+        clear: both;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .content-author{
+        max-height: 500px;
+        margin-bottom: 20px;
+        text-transform: inherit;
+        overflow: auto;
+    }
+    #read-news-container-author > p{
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    #delete-news-button{
+        margin-left: 780px;  
+        display: none;      
+    }
+/*End section*/
+/*Start section events.html*/
+#last-events-button{        
+        width: 650px;
+        padding-left: 20px;
+    }
+#add-events-button{
+    float: right;
+    width: 220px;
+    margin-left: 20px;
+    text-align: center;
+    display: none;
+}
+#events-container{
+    margin-top: 20px;
+    padding: 20px;
+    width: 880px;
+    height: 555px;
+}
+    .list-events >li{
+        margin-bottom: 20px;
+        margin-right: 20px; 
+        display: inline-block;  
+    }
+        .list-events >li:last-child{
+            margin-left: 0;     
+        }
+    .events{
+        display: inline-block;
+        text-transform: uppercase;   
+        height: 275px;
+        width: 155px;
+
+    }
+        .events:hover{
+            color: #6685E0;
+        }  
+    .events-images{
+        height: 200px;
+        width: 155px;
+    }
+.read-events{
+    max-height: 610px;
+    padding: 20px;
+    background: #000; 
+}
+    #read-events-container-title{
+        float: left;
+        width: 650px;
+    }
+        #read-events-container-title > pre{
+            font: 16px "Georgia" sans-serif;
+            margin-top: 0;
+        }
+    .read-events-imgages{
+        float: right;
+        height: 200px;
+        width: 155px;
+        border: 5px solid #231f20;
+        margin-bottom: 20px;
+    }
+#delete-events{
+    clear: both;
+}
+    #delete-events-button{
+        margin-left: 780px;  
+        display: none;      
+    }    
