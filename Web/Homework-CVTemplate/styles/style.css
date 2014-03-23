@@ -1,3 +1,9 @@
+/*
+Theme Name: Curriculum vitae;
+Decription: Theme curriculum vitae;
+Author: Aleksandar;
+Version: 1.0;
+*/
 html,body,div,header,h1,h2,h3,h4,h5,a,ul,li,img,section,p{
     margin: 0;
     padding: 0;
@@ -51,6 +57,7 @@ li{
         display: inline-block;
     }
     #nav li a{
+        display: block;
         color: #c3c8d6;
         text-transform: uppercase;
         line-height: 60px;        
@@ -67,6 +74,9 @@ li{
     margin: 0 auto;
     width: 960px;
 } 
+.article{
+    min-height: 610px; 
+}
 .container{
     padding-top: 100px;
     padding-bottom: 100px;        
@@ -113,14 +123,22 @@ li{
 
 /*Start about-me*/
 #about-me{
-    min-height: 610px;
     background: #00bdbd;
     color: #fff;  
 }
     #about-me-container .heading p{
         color: #fff;
     }
-    #about-me-container >p{
+    .about-sidebar{
+        display: inline-block;
+        margin-right: 80px;     
+        width: 60%;
+    }
+    .about-sidebar p{     
+        line-height: 25px;
+        text-align: justify;
+    }
+    .about-me-text{
         display: inline-block;
         margin-right: 80px;     
         width: 60%;
@@ -135,7 +153,6 @@ li{
 /*End about-me*/
 /*Start skills*/
 #skills{
-    min-height: 610px;
     background: #e8edf0;    
     color: #262b37;
 }
@@ -165,7 +182,6 @@ li{
 /*End skills*/
 /*Start experience*/
 #experience{
-    min-height: 610px;
     background: #fff;
     color: #262b37;
 }
@@ -199,7 +215,7 @@ li{
             display: inline-block;     
             padding: 30px;
             background: #e8edf0;
-            width: 55%;
+            width: 740px;
         }
         .job-description h4{
             padding-bottom: 5px;
@@ -207,69 +223,87 @@ li{
 /*End experience*/
 /*Start contacts*/
 #contact{
-    min-height: 610px;
+    min-height: 630px;
     background: #474d5d;   
     color: #fff;
 }
     #contact-container .heading h2{
         color: #ff675f;
     }
-    #contact-details h3{
-        font-weight: 600;
-        text-transform: uppercase;
-        padding-bottom: 30px;
+    #contact-details{
+        display: inline-block;
+        margin-right: 20px;
+        width: 400px;
     }
-    #contact-details a{
-        color: #93959c;
-        padding-bottom: 15px;
-        line-height: 30px;
+        #contact-details h3{
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        #contact-details a{
+            color: #93959c;
+            padding-bottom: 15px;
+            line-height: 30px;
+        }
+        i{
+            padding-right: 20px;
+            width: 10px;
+        }
+    #send-message{
+        display: inline-block;
+        position: absolute;
     }
-    i{
-        padding-right: 20px;
-        width: 10px;
-    }
+        #send-message h3{
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        #send-message .your-info{
+            margin-bottom: 10px;
+            color: #93959c
+        }       
+        .contact-field{
+            background: #585f73;
+            padding-left: 10px;
+            border: none;
+            width: 530px;
+            height: 40px;
+            color: #93959c;
+            font-style: italic;
+            font: 14px "Georgia" sans-serif;
+            font-style: italic;
+        }
+        #send-message textarea{
+            width: 528px;
+            padding-top: 10px;
+            height: 90px;
+            
+        }
+        #send-message input[type="submit"]{
+            height: 40px;
+            width: 150px;
+            border: none;
+            background: #f5534b;
+            color: #fff;
+            font-weight: bold;
+        }       
+        .wpcf7-not-valid-tip{
+            display: block;
+            color: #f5534b;
+        }
+        .wpcf7-validation-errors {
+            max-width: 535px;
+            background: #ffe2e2;
+            border: 1px solid #f5534b;
+            color: #f5534b;
+        }
+        .wpcf7-response-output {
+            margin: 10px 0;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border-radius: 5px;
+        }
 /*End contacts*/
 /*End section*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
