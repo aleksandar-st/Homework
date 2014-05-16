@@ -1,91 +1,112 @@
 $(document).ready(function() {
 
-    $('#registration-button').click(function(){
-        $('#gallary').hide();
-        $('#register-container').show();
-    });
-
-    $('#exit-registration-form').click(function(){
-        $('#register-container').hide();
-        $('#gallary').show();       
-    });
-    
     logInChecker();
 
-    $('#register-button').click(register);
- 
-    $('#login-button').click(logIn);
+    $('#nav-login-btn').on('click', {element: $('#login-container')} ,showLoginRegisterContainer);
 
-    $('#logout-button').click(logOut);
-    
-    $('#welcome-text').html("Добре дошъл, " + localStorage.userName);
+    $('#nav-register-btn').on('click', {element: $('#register-container')} ,showLoginRegisterContainer);
 
-    setInterval(gallary,5000);
+    $('.form .close').on('click', {element: $('.form-container')} ,closeLoginRegisterContainer);
 
-    $('.gallary-next-images').click(nextImages);
+    $('#register-btn').on('click', register);
+
+    $('#login-btn').on('click', logIn);
+
+    $('#nav-logout-btn').on('click', logOut);
+
+    $('#images-selector img').hover(function(){
+        $(this).stop().animate({
+            'opacity': '1'
+        }, 800)
+    },function(){
+        $(this).stop().animate({
+            'opacity': '0.4'
+        }, 800)
+    });
+
+    $('#images-selector img').on('click', selectImg);
+   
+    setInterval(nextImg,3000);
     
     if(getFileName()=='index.html'){
         
         lastNews();
-        
-        $('#last-news-button').click(function(e){
-            window.location.reload();
+
+        $('#last-news-button').on('click', function(e){
             e.preventDefault();
-        })
-
-        $('#add-news-button').click(function(e){
-            $('#main-content').hide();
-            $('#add-news-container').show();
-            e.preventDefault();   
+            window.location.reload();            
         });
 
-        $('#exit-add-news-form').click(function(e){       
-            $('#add-news-container').hide(); 
-            $('#main-content').show(); 
-            e.preventDefault();   
-        });
+        $('#add-news-button').on('click', {showElement: $('#add-news-container'), hideElement: $('#main-content')} ,showAndHideElement);
 
-        $('#add-button').click(addPost);
+        $('#exit-add-news-form').on('click', {showElement: $('#main-content'), hideElement: $('#add-news-container')} ,showAndHideElement);
 
-        $('#news-container').on('click', '.news', readPost).on('click',function(e){
-            $('#main-content').hide();
-            $('#read-news-container').show(); 
-            e.preventDefault();   
-        });
+        $('#news-container').on('click', '.news', readPost).on('click', {showElement: $('#read-news-container'), hideElement: $('#main-content')} ,showAndHideElement);
 
-        $('#read-news-container').on('click', '#exit-read-news-container', function(e){
-            $('#read-news-container').hide();
-            $('#main-content').show();
-            e.preventDefault();
-        });
+        $('#read-news-container').on('click', '#exit-read-news-container', {showElement: $('#main-content'), hideElement: $('#read-news-container')} ,showAndHideElement); 
+
+        $('#add-button').on('click', addPost);
         
         $('#read-news-container').on('click', '#delete-news-button', deletePost);
     }
 
     if(getFileName()=='events.html'){
+
         lastEvents();
 
-        $('#events-container').on('click', '.events', readEvents).on('click',function(e){
-            $('#main-content').hide();
-            $('#read-events-container').show(); 
-            e.preventDefault();   
-        });
-
-        $('#read-events-container').on('click', '#exit-read-events-container', function(e){
-            $('#read-events-container').hide();
-            $('#main-content').show();
+        $('#last-events-button').on('click', function(e){
             e.preventDefault();
+            window.location.reload();            
         });
 
-        $('#read-events-container').on('click', '#delete-events-button', deleteEvents);
+        $('#events-container').on('click', '.events', readEvents).on('click', {showElement: $('#read-events-container'), hideElement: $('#main-content')} ,showAndHideElement);
 
+        $('#read-events-container').on('click', '#exit-read-events-container', {showElement: $('#main-content'), hideElement: $('#read-events-container')} ,showAndHideElement); 
     }
 
 });  
+//Check for logIn
+function logInChecker(){
+    if(localStorage.getItem('sessionId') == undefined){
+        $('#logout-nav').hide();
+        $('#add-news-button').hide();
+        $('#login-register-nav').show();     
+    }
+    else{
+        if(localStorage.getItem('sessionId').length == 40){
+            $('.form-container').slideUp(200);
+            $('#login-register-nav').hide();
+            $('#logout-nav').show();
+            $('#user-text span').text(localStorage.getItem('userName'));
+            if(getFileName()=='index.html'){
+                $('#add-news-button').show();
+            }
+        }
+    }   
+};
 
-// //AJAX REQUESTS FUNCTIONS
-// //path to server
-var serverURL = "http://localhost/Homework-SystemNews/services/";
+//This function show login and register container
+function showLoginRegisterContainer(e){
+    e.preventDefault();
+    e.data.element.slideDown(200);
+};
+
+//This function close login and register container
+function closeLoginRegisterContainer(e){
+    e.preventDefault();
+    e.data.element.slideUp(200);
+};
+
+//This function show and hide submitted element
+function showAndHideElement(e){
+    e.preventDefault();
+    e.data.hideElement.hide();
+    e.data.showElement.slideDown(300);
+};
+
+//Ajax request function
+//Path to server
+var serverURL = "http://localhost:8080/Web-project/services/";
 function performRequest(serviceUrl, onSuccess, data, onError){
     onError = typeof onError !== 'undefined' ? onError : function(){};
     $.ajax({
@@ -94,14 +115,14 @@ function performRequest(serviceUrl, onSuccess, data, onError){
         dataType: "json",
         data: data
     }).done(onSuccess).fail(onError);
-}  
+};
 
 //This function return filename
 function getFileName(){
     var url = window.location.pathname;
     var filename = url.substring(url.lastIndexOf('/')+1);
     return filename;
-}
+};
 
 //This function create user profils
 function register(e){
@@ -116,16 +137,16 @@ function register(e){
         if(data.error == 1){
             switch(data.errNum) {
                 case 450:
-                    showErrorMessage("Потребителското име или паролата са невалидни!");
+                    showMessage("Потребителското име или паролата са невалидни!");
                     break;
                 case 451:
-                    showErrorMessage("Потребителското име е невалидно!");
+                    showMessage("Потребителското име е невалидно!");
                     break;
                 case 452:
-                    showErrorMessage("Паролата е невалидна!");
+                    showMessage("Паролата е невалидна!");
                     break;
                 case 453:
-                    showErrorMessage("Потребителското име вече съществува!");
+                    showMessage("Потребителското име вече съществува!");
                     break;
             }
         }
@@ -134,9 +155,6 @@ function register(e){
             localStorage.setItem("sessionId", data.sessionId);
             localStorage.setItem("userName", userName);
             logInChecker();
-            setTimeout(function(){
-                window.location.reload(1);
-            }, 1);
         }
     },data);
 }
@@ -153,13 +171,13 @@ function logIn(e){
         if(data.error == 1){
             switch(data.errNum) {
                 case 450:
-                    showErrorMessage("Потребителското име или паролата са невалидни!");
+                    showMessage("Потребителското име или паролата са невалидни!");
                     break;
                 case 451:
-                    showErrorMessage("Потребителското име е невалидно!");
+                    showMessage("Потребителското име е невалидно!");
                     break;
                 case 453:
-                    showErrorMessage("Потребителското име или паролата са невалидни!");
+                    showMessage("Потребителското име или паролата са невалидни!");
                     break;
             }
         }
@@ -168,35 +186,51 @@ function logIn(e){
             localStorage.setItem("sessionId", data.sessionId);
             localStorage.setItem("userName", userName);
             logInChecker();
-            setTimeout(function(){
-                window.location.reload(1);
-            }, 1);
         }
     },data);
-}
+};
 
 function logOut(){
     localStorage.clear();
     logInChecker();
-}
+};
 
-//Check for logIn
-function logInChecker(){
-    if(localStorage.getItem('sessionId') == undefined){
-        $('#logout-form').hide();
-        $('#add-news-button').hide();
-        $('#login-register-form').show();       
+//This function show message
+function showMessage(msg){
+    $('#msg-text').text(msg);
+    $('#msg').slideDown(200);
+    setTimeout(function(){
+        $('#msg').slideUp(200);
+    }, 5000);
+};
+
+//Gallary
+//This function select images
+function selectImg(e){
+    e.preventDefault();
+    var currentAltImg=$(this).attr('alt')
+    imgShow(currentAltImg);
+};
+
+//This function show images
+function imgShow(currentAltImg){
+    var currentImg=$('#slider [alt='+currentAltImg+']');
+    var imgPosition=currentImg.position();
+    $('#current').attr('id', ' ');
+    $('[alt='+currentAltImg+']').attr('id', 'current')
+    $('#slider').animate({
+        'top': -imgPosition.top
+    }, 1000, 'easeOutBack')
+};
+
+//This function select next images 
+function nextImg(){   
+    var currentAltImg=$('#current').next('img').attr('alt');
+    if(!currentAltImg){
+        currentAltImg =$('#display-images').find('img:first').attr('alt'); 
     }
-    else{
-        if(localStorage.getItem('sessionId').length == 40){
-            $('#login-register-form').hide();
-            $('#logout-form').show();
-            if(getFileName()=='index.html'){
-                $('#add-news-button').show();
-            }
-        }
-    }   
-}
+    imgShow(currentAltImg);
+};
 
 //This function displayed post
 function lastNews(e){
@@ -250,51 +284,18 @@ function addPost(){
     };
     performRequest("addPost.php", function(data){
     },data);
-
-}
+};
 
 //This function delete post
 function deletePost(){
     var post_id = $(this).attr('name');
     performRequest( "deletePost.php?post="+post_id, function(data){
-        showErrorMessage(data[0].del);        
+        showMessage(data[0].del);        
     });
     $('.read-more').remove();
     setTimeout(function(){
         window.location.reload(1);
     }, 1000);
-};
-
-
-//Show error message
-function showErrorMessage(msg, hide){
-    var html='<p id="message-text">'+msg+'</p>';
-    $("#message").html(html).show();
-    setTimeout(function(){
-        window.location.reload(1);
-    }, 3000);
-};
-
-//Gallary
-function gallary(){
-    var a = $(".active");
-    a.removeClass('active');  
-                                                                                                               
-    if(a.hasClass('last'))
-    {
-        a.siblings(":first").addClass('active');                            
-    }
-    else
-    {  
-        a.next().addClass('active');
-    }
-};
-
-function nextImages(e){
-    var alt=$(this).attr('alt');
-    $('.gallary-images').removeClass('active');
-    $('.gallary-images[alt='+alt+']').addClass('active');
-    e.preventDefault(); 
 };
 
 //This function displayed events

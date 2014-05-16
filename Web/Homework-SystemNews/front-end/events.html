@@ -7,73 +7,85 @@
     <meta name="author" content="Aleksandar Stankovski">
     <link rel="shurtcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.10.4.custom.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body>
-    <div id="message"></div>
-    <header id="header">
-        <h1 id="logo">
-            <a href="index.html" title="Почетна"><img src="images/logo.png" alt="Лого"></a>
-        </h1>
-        <div id="login-register-form">
-            <form action="" method="POST">
-                <input type="text" placeholder="Потребителско име" id="login-username" class="login-input-field"/>
-                <input type="password" placeholder="Парола" id="login-password" class="login-input-field"/>
-                <input type="submit" id="login-button" class="button" value="Вход">
-                <input type="button" id="registration-button" class="button" value="Регистрирай се">
-            </form>
-        </div>
-        <div id="logout-form">
-            <p id="welcome-text">Добре дошъл, google</p>
-            <input type="submit" id="logout-button" class="button" value="Изход">
-        </div>
+    <div id="msg">
+        <p id="msg-text">Error</p>
+    </div>
+    <header id="header">  
+        <nav id="nav" class="wrapper">
+            <ul id="global-nav">
+                <li><a href="index.html">новини</a></li>
+                <li><a href="events.html">събития</a></li>
+                <li><a href="#">интервюта</a></li>
+                <li><a href="#">клубове</a></li>
+            </ul>
+            <div id="login-register-nav" class="user-nav">
+                <ul>                    
+                    <li><a id="nav-login-btn" class="nav-btn" href="#">Вход</a></li>
+                    <span>/</span>              
+                    <li><a id="nav-register-btn" class="nav-btn" href="#">Регистрирай се</a></li>                                                 
+                </ul>
+            </div>
+            <div id="logout-nav" class="user-nav">
+                <ul>    
+                    <li><p id="user-text">Добре дошъл <span>google</span></p></li>                          
+                    <li><a id="nav-logout-btn" class="nav-btn" href="#">Изход</a></li>                                                          
+                </ul>
+            </div>
+        </nav>  
     </header>
     <div id="wrapper">
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Новини</a></li>
-                <li><a href="events.html">Събития</a></li>
-                <li><a href="#">Интервюта</a></li>
-                <li><a href="#">Снимки</a></li>
-                <li><a href="#">Клубове</a></li>
-            </ul>
-        </nav>
-        <section id="section">
-            <div id="gallary-register">
-                <div id="register-container">                                                 
-                    <div id="register-form"> 
-                        <div id="exit-registration-form" class="exit-button"><a href="#" title="Затвори">X</a></div> 
-                        <p id="register-form-text">Регистрирай се за да можеш да добавяш новини</p> 
-                        <form action="" method="POST">
-                            <input type="text" placeholder="Потребителско име" id="register-username" class="input-field"/>
-                            <input type="password" placeholder="Парола" id="register-password" class="input-field"/>
-                            <input type="submit" id="register-button" class="button" value="Регистрация">
-                        </form>
-                    </div>
+        <section id="section">  
+            <div id="gallary">
+                <div id="display-images">
+                    <div id="slider">
+                        <img src="images/img1.jpg" alt="CroCop">
+                        <img src="images/img2.jpg" alt="FedorEmelianenko">
+                        <img src="images/img3.jpg" alt="CainVelasquez">
+                    </div>           
                 </div>
-                <div id="gallary">
-                    <img class="gallary-images active" src="images/img1.jpg" alt="1">
-                    <img class="gallary-images" src="images/img2.jpg" alt="2">
-                    <img class="gallary-images last" src="images/img3.jpg" alt="3">
-                    <div id="next-images">
-                        <ul>
-                            <li><a href="#"><img class="gallary-next-images" src="images/thumb-img1.jpg" alt="1"></a></li>
-                            <li><a href="#"><img class="gallary-next-images" src="images/thumb-img2.jpg" alt="2"></a></li>
-                            <li><a href="#"><img class="gallary-next-images" src="images/thumb-img3.jpg" alt="3"></a></li>
-                        </ul>
-                    </div>
+                <div id="images-selector">
+                    <img src="images/thumb-img1.jpg" alt="CroCop">
+                    <img src="images/thumb-img2.jpg" alt="FedorEmelianenko">
+                    <img src="images/thumb-img3.jpg" alt="CainVelasquez">
                 </div>
-            </div>
+            </div>    
             <div id="content">
                 <div id="main-content">
                     <a href="#" id="last-events-button" class="content-button">Събития</a>
-                    <a href="#" id="add-events-button" class="content-button">Добави събитие</a>
                     <div id="events-container"></div>
                 </div>
                 <div id="read-events-container"></div>
             </div>
         </section>
+        <div id="login-container" class="form-container">
+            <div class="form">
+                <div>
+                    <a id="login-close" class="close" href="#" title="Изход">X</a>
+                </div>
+                <form>
+                    <input id="login-username" class="input-label" type="text" placeholder="Име"></br>
+                    <input id="login-password" class="input-label" type="password" placeholder="Парола">
+                    <input id="login-btn" class="input-button" type="submit" value="Логин">
+                </form> 
+            </div>
+        </div>
+        <div id="register-container" class="form-container">
+            <div class="form">
+                <div>
+                    <a id="register-close" class="close" href="#" title="Изход">X</a>
+                </div>
+                <form>
+                    <input id="register-username" class="input-label" type="text" placeholder="Име"></br>
+                    <input id="register-password" class="input-label" type="password" placeholder="Парола">
+                    <input id="register-btn" class="input-button" type="submit" value="Регистрирай се">
+                </form> 
+            </div>
+        </div>
     </div>
 </body>
 </html>

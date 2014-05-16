@@ -5,14 +5,14 @@ html,body,div,header,h1,h2,h3,a,ul,li,img,section,p{
 html{
     font: 16px "Georgia" sans-serif;
     background: url("../images/background.jpg") repeat 0 0;
-    color: #fff;
+    color: #c3c8d6;
 }
 img{
     border: 0;
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #c3c8d6;
 }
 p{
     font-size: 16px;
@@ -20,41 +20,21 @@ p{
 li{
     list-style-type: none;
 }
-span{
-    color: #6685E0;
-    font-weight: bold;
-}
-#header,
-#nav,
-#section,
-#register-container,
-#gallary-register,
-#content
-{
-      zoom:1;
-}
-#header:after,
-#nav:after,
-#section:after,
-#register-container:after,
-#gallary-register:after,
-#content:after{
-    content: "";
-    clear: both;
-    display: block;  
-} 
-#message{
-    display: none;
-    min-height: 40px;
+#msg{
+    position: fixed;
+    z-index: 100000;
+    width: 100%;   
+    height: 60px;
     background: #ffd7d7;
     border: 2px solid #df8f8f;
+    display: none;
 }
-#message-text{
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #000;
-}
+    #msg-text{
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #000;
+    }
 .button{
     width: 100px;
     height: 35px;
@@ -80,76 +60,112 @@ span{
     width: 960px;
 } 
 /*Start header*/
-#header{
-    background: #231f20;
-    height: 75px;
-    margin-bottom: 30px;
-}
-    #logo{
-        float: left; 
-        margin-left: 200px;      
-    }
-        #logo img{
-            width: 200px;
-            height: 70px;
-        }
-    #login-register-form{
-        float: right;
-    }
-        .login-input-field{
-            width: 150px;
-            height: 30px;
-            margin-right: 20px;
-            margin-top: 20px;
-            border: 2px solid #6d2421;
-            border-radius: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        #registration-button{
-            width: 150px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    #logout-form{
-        float: right;
-        margin-right: 20px;
-        margin-top: 20px;
-        display: none;
-    }
-       #welcome-text{
-        float: left;
-        margin-right: 20px;
-        font-weight: bold;
-        line-height: 35px;        
-       }
-/*End header*/
 /*Start nav*/
 #nav{
-    margin-bottom: 30px;
+    width: 100%;   
+    height: 60px;
     background: #231f20;
+    margin-bottom: 30px;
 }
-    #nav li{
+    #nav ul li{
         display: inline-block;
-        float: left;
-        width: 190px;
-        height: 40px;
-        border-right: 2px solid #4f4e4e;      
-    } 
-    #nav li:last-child{
-        border-right: none;
     }
-        #nav li:hover{
-            background: #6685E0;
-        } 
-       #nav a{
+    #global-nav{
+        display: inline-block;
+        position: relative;
+        left: 195px;
+    }    
+        #global-nav li a{
             display: block;
-            text-align: center;
-            padding-top: 11px; 
-            padding-bottom: 11px;
-       }
-/*Endt nav*/
-/*Start section*/
+            color: #c3c8d6;
+            text-transform: uppercase;
+            line-height: 60px;        
+            padding: 0 30px;
+        }
+            #global-nav li:hover{
+                background: #424A5E;
+            }
+    .user-nav{
+        float: right;   
+        margin-right: 195px;     
+    }
+        .nav-btn{
+            display: block;
+            color: #f5534b;
+            line-height: 60px;        
+        }
+            .nav-btn:hover{
+                text-decoration: underline;
+            } 
+        #login-register-nav span{
+            color: #ff675f;      
+        }            
+        #logout-nav{
+            display: none;    
+        }  
+            #user-text{
+                color: #fff;
+                margin-right: 10px;
+            }  
+            #logout-nav span{
+                font-weight: bold;
+            } 
+/*End nav*/  
+/*End header*/ 
+/*Start form container*/
+.form-container{
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('../images/opacity.png'); 
+}
+    .form{
+        position: relative;
+        width: 400px;
+        height: 160px;
+        top:200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #424A5E;
+        border-radius: 10px;
+    }
+        .form > div{
+            height: 20px;
+            margin-bottom: 20px;
+            float: right;
+        }
+        .close{
+            color: #fff;  
+            font-weight: bold;             
+        }
+        .input-label{
+            height: 30px;
+            width: 375px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .input-button{
+            height: 35px;
+            width: 120px;
+            background: #f5534b;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            border-color: #f5534b;
+        }
+        #login-container{
+            display: none;
+        }
+        #register-container{
+            display: none;
+        }
+/*End form container*/
+/*Start section index.html*/
 #gallary-register{
     height: 400px;
     margin-bottom: 30px;
@@ -175,29 +191,39 @@ span{
                 font-weight: bold;
             }
     #gallary{
-        padding:20px;
+        width: 920px;
+        height: 360px;
+        margin: auto;
+        background: #231f20;
+        margin-bottom: 30px;
+        padding: 20px;
     }
-        .gallary-images{
+        #display-images{
             width: 750px;
             height: 360px;
             float: left;
-            margin-right: 20px;
-        } 
-        .gallary-images{
-            display: none;
+            overflow: hidden;
+            border-radius: 10px;
         }
-        .active{
-            display: inline-block;
-        }   
-    .gallary-next-images{
-        width: 145px;
-        height: 104px;
-        margin-bottom: 20px;
-        opacity: 0.4;
-    }
-        .gallary-next-images:hover{
-            opacity: 1;
+            #slider{
+                    position: relative;    
+                }
+                #slider img{
+                    width: 750px;
+                    height: 360px;
+                }
+        #images-selector{
+            float: left;
+            margin-left: 20px;
         }
+            #images-selector img{
+                display: block;
+                width: 145px;
+                height: 104px;
+                margin-bottom: 20px;
+                opacity: 0.4;
+                border-radius: 10px;
+            }
 #content{
     height: 650px;
     margin-bottom: 30px;
@@ -207,7 +233,7 @@ span{
     .content-button{
         display: inline-block;
         height: 30px;        
-        background: #6685E0;
+        background: #424A5E;
         border: 1px solid #fff;
         border-radius: 5px;         
         font-weight: bold; 
@@ -287,13 +313,14 @@ span{
         list-style-type: none;
     }
         .news:hover{
-            color: #6685E0;
+            color: #424A5E;
         }  
 
 .read-more{
     max-height: 610px;
     padding: 20px;
-    background: #000;   
+    background: #000;  
+    border-radius: 10px; 
 }
     .read-container-title{
         clear: both;
@@ -315,24 +342,17 @@ span{
         margin-left: 780px;  
         display: none;      
     }
-/*End section*/
+/*End section index.html*/
 /*Start section events.html*/
 #last-events-button{        
-        width: 650px;
-        padding-left: 20px;
-    }
-#add-events-button{
-    float: right;
-    width: 220px;
-    margin-left: 20px;
-    text-align: center;
-    display: none;
+    width: 650px;
+    padding-left: 20px;
 }
 #events-container{
     margin-top: 20px;
     padding: 20px;
     width: 880px;
-    height: 555px;
+    height: 555px; 
 }
     .list-events >li{
         margin-bottom: 20px;
@@ -350,7 +370,7 @@ span{
 
     }
         .events:hover{
-            color: #6685E0;
+            color: #424A5E;
         }  
     .events-images{
         height: 200px;
@@ -360,6 +380,7 @@ span{
     max-height: 610px;
     padding: 20px;
     background: #000; 
+    border-radius: 10px;
 }
     #read-events-container-title{
         float: left;
@@ -382,4 +403,8 @@ span{
     #delete-events-button{
         margin-left: 780px;  
         display: none;      
-    }    
+    } 
+/*End section events.html*/   
+
+
+
