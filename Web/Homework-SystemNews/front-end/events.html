@@ -8,7 +8,6 @@
     <link rel="shurtcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
     <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery-ui-1.10.4.custom.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body>
@@ -18,10 +17,9 @@
     <header id="header">  
         <nav id="nav" class="wrapper">
             <ul id="global-nav">
-                <li><a href="index.html">новини</a></li>
+                <li><a href="index.html">начало</a></li>
+                <li><a href="news.html">новини</a></li>
                 <li><a href="events.html">събития</a></li>
-                <li><a href="#">интервюта</a></li>
-                <li><a href="#">клубове</a></li>
             </ul>
             <div id="login-register-nav" class="user-nav">
                 <ul>                    
@@ -40,37 +38,34 @@
     </header>
     <div id="wrapper">
         <section id="section">  
-            <div id="gallary">
-                <div id="display-images">
-                    <div id="slider">
-                        <img src="images/img1.jpg" alt="CroCop">
-                        <img src="images/img2.jpg" alt="FedorEmelianenko">
-                        <img src="images/img3.jpg" alt="CainVelasquez">
-                    </div>           
-                </div>
-                <div id="images-selector">
-                    <img src="images/thumb-img1.jpg" alt="CroCop">
-                    <img src="images/thumb-img2.jpg" alt="FedorEmelianenko">
-                    <img src="images/thumb-img3.jpg" alt="CainVelasquez">
-                </div>
-            </div>    
-            <div id="content">
+            <div id="events-page-content" class="content">
                 <div id="main-content">
-                    <a href="#" id="last-events-button" class="content-button">Събития</a>
-                    <div id="events-container"></div>
+                    <a href="#" id="last-events-button" class="content-button">Събития</a>                                                           
+                    <div id="events-container"></div>                                   
                 </div>
-                <div id="read-events-container"></div>
+                <div id="read-events-container"></div>  
             </div>
         </section>
+        <aside id="aside">
+            <div class="banner">
+                <a href="#"><img class="banners" src="images/banner1.png" alt="Banner1"></a>
+            </div>
+            <div class="banner">
+                <a href="#"><img class="banners" src="images/banner2.png" alt="Banner2"></a>
+            </div>
+             <div class="banner">
+                <a href="#"><img class="banners" src="images/banner3.png" alt="Banner3"></a>
+            </div>
+        </aside>
         <div id="login-container" class="form-container">
             <div class="form">
                 <div>
                     <a id="login-close" class="close" href="#" title="Изход">X</a>
                 </div>
                 <form>
-                    <input id="login-username" class="input-label" type="text" placeholder="Име"></br>
-                    <input id="login-password" class="input-label" type="password" placeholder="Парола">
-                    <input id="login-btn" class="input-button" type="submit" value="Логин">
+                    <input id="login-username" class="input-label input-field" type="text" placeholder="Име"></br>
+                    <input id="login-password" class="input-label input-field" type="password" placeholder="Парола">
+                    <input id="login-btn" class="button" type="submit" value="Логин">
                 </form> 
             </div>
         </div>
@@ -80,12 +75,13 @@
                     <a id="register-close" class="close" href="#" title="Изход">X</a>
                 </div>
                 <form>
-                    <input id="register-username" class="input-label" type="text" placeholder="Име"></br>
-                    <input id="register-password" class="input-label" type="password" placeholder="Парола">
-                    <input id="register-btn" class="input-button" type="submit" value="Регистрирай се">
+                    <input id="register-username" class="input-label input-field" type="text" placeholder="Име"></br>
+                    <input id="register-password" class="input-label input-field" type="password" placeholder="Парола">
+                    <input id="register-btn" class="button" type="submit" value="Регистрирай се">
                 </form> 
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
