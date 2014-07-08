@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json');
 include 'dbConfig.php';
 $userName = trim($_POST['userName']);
@@ -46,3 +45,4 @@ else{
     $err = array('error'=> 1, 'msg' => "Username or password is invalid!", 'errNum' => 450);
     echo json_encode($err);
 }
+//header('Access-Control-Allow-Origin: *');

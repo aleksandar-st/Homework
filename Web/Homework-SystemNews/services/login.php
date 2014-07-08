@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json');
 include 'dbConfig.php';
 $userName = trim($_POST['userName']);

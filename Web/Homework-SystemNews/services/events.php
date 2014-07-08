@@ -1,5 +1,4 @@
 <?php
-    header('Access-Control-Allow-Origin: *');
     header('Content-type: application/json');
     include 'dbConfig.php';
     $query=mysql_query("SELECT events_id, img, title FROM `events` ORDER BY `events_id` DESC LIMIT 12");

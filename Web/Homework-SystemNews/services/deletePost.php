@@ -1,7 +1,5 @@
 <?php
-session_start();
 error_reporting(0); 
-header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json');
 require 'dbConfig.php';
 
