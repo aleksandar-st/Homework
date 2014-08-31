@@ -1,0 +1,46 @@
+﻿htm, body, a, p, ul, li, div {
+    margin:0;
+    padding:0;
+}
+ul {
+    list-style:none
+}
+.btn, .hLink{
+    margin-left:20px;      
+}
+.btn {
+    width:250px;
+    height:30px;
+    margin-bottom:10px;
+}
+#tittle {
+    margin-left:20px;
+}
+#BodyContainer {
+    width: 600px; 
+    margin: auto; 
+}
+.SuccessMesage {
+    color: #0000EE;
+}
+legend {
+    font-weight:bold;
+    text-transform: uppercase;
+}
+#SubmitContainer {
+    margin-top:10px;
+    text-align: right
+}
+#body_lblMessage {
+    margin-left:400px;
+}
+.ErrorMessage {
+    color:#c21818;
+}
+#ProcessInfoContainer {
+    margin-left:40px;
+}
+
+
+
+

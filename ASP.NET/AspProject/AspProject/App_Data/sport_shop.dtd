@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT sport_shop ( shop_info, supplements, sport_accessories ) >
+
+<!ELEMENT shop_info ( shop_name, country, city, address, phone, email, site) >
+<!ATTLIST shop_info shop_id ID #REQUIRED>
+<!ELEMENT shop_name ( #PCDATA ) >
+<!ELEMENT country ( #PCDATA ) >
+<!ELEMENT city ( #PCDATA ) >
+<!ELEMENT address ( #PCDATA ) >
+<!ELEMENT phone ( #PCDATA ) >
+<!ELEMENT email ( #PCDATA ) >
+<!ELEMENT site ( #PCDATA ) >
+
+<!ELEMENT supplements ( supplement+ ) >
+<!ELEMENT supplement (supplement_name, supplement_price, supplement_rating, taste,  packing, servings) >
+<!ATTLIST supplement supplement_id CDATA #REQUIRED
+			              type CDATA #REQUIRED		                                            
+			              purpose CDATA #REQUIRED
+			              supplement_brand CDATA #REQUIRED
+			              available_in_shop  IDREFS #REQUIRED>
+<!ELEMENT supplement_name ( #PCDATA ) >
+<!ELEMENT supplement_price ( #PCDATA ) >
+<!ATTLIST supplement_price currency CDATA #REQUIRED>
+<!ELEMENT supplement_rating ( #PCDATA ) >
+<!ELEMENT taste ( #PCDATA ) >
+<!ELEMENT packing ( #PCDATA ) >
+<!ATTLIST packing measurement_unit CDATA #REQUIRED >
+<!ELEMENT servings ( #PCDATA ) >
+
+<!ELEMENT sport_accessories (boxing_gloves+,  sport_shoes+) >
+
+<!ELEMENT boxing_gloves ( boxing_gloves_model,boxing_gloves_price, boxing_gloves_size,  boxing_gloves_rating, boxing_gloves_material, origin) >
+<!ATTLIST boxing_gloves boxing_gloves_id CDATA #REQUIRED
+                                available_in_shop  IDREFS #REQUIRED>
+<!ELEMENT boxing_gloves_model ( #PCDATA ) >
+<!ELEMENT boxing_gloves_price ( #PCDATA ) >
+<!ATTLIST  boxing_gloves_price currency CDATA #REQUIRED >
+<!ELEMENT boxing_gloves_size ( #PCDATA ) >
+<!ELEMENT boxing_gloves_rating ( #PCDATA ) >
+<!ELEMENT boxing_gloves_material ( #PCDATA ) >
+<!ELEMENT origin ( #PCDATA ) >
+
+<!ELEMENT sport_shoes ( shoes_model, shoes_price, shoes_size, shoes_color, shoes_brand) >
+<!ATTLIST sport_shoes sport_shoes_id CDATA #REQUIRED 
+                                available_in_shop  IDREFS #REQUIRED>
+<!ELEMENT shoes_model ( #PCDATA ) >
+<!ELEMENT shoes_price ( #PCDATA ) >
+<!ATTLIST shoes_price currency CDATA #REQUIRED >
+<!ELEMENT shoes_size ( #PCDATA ) >
+<!ELEMENT  shoes_color ( #PCDATA ) >
+<!ELEMENT shoes_brand ( #PCDATA ) >

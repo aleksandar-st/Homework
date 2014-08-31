@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sport_shop SYSTEM "sport_shop.dtd">
+<sport_shop>
+  <shop_info shop_id="N1">
+    <shop_name>Сила</shop_name>
+    <country>България</country>
+    <city>София</city>
+    <address>Георги С. Раковски 176</address>
+    <phone>0876142563</phone>
+    <email>sila@gmail.com</email>
+    <site>www.sila.com</site>
+  </shop_info>
+  <supplements>
+    <supplement supplement_id="13"  type="Протеини" purpose="Изграждане на чисти мускули"  supplement_brand="Алмакс" available_in_shop="N1">
+      <supplement_name>Мускул Макс</supplement_name>
+      <supplement_price currency="лев">28.00</supplement_price>
+      <supplement_rating>8</supplement_rating>
+      <taste>шоколад</taste>
+      <packing measurement_unit="кг">0.450</packing>
+      <servings>25 дози</servings>
+    </supplement>
+    <supplement supplement_id="14" type="Гейнъри" purpose="Стимулира покачването на тегло"  supplement_brand="Oптимум нутришън" available_in_shop="N1">
+      <supplement_name>Хидро</supplement_name>
+      <supplement_price currency="лев">81.00</supplement_price>
+      <supplement_rating>8</supplement_rating>
+      <taste>шоколад</taste>
+      <packing measurement_unit="кг">1.000</packing>
+      <servings>22 дози</servings>
+    </supplement>
+  </supplements>
+  <sport_accessories>
+    <boxing_gloves boxing_gloves_id="13" available_in_shop="N1">
+      <boxing_gloves_model>Спорт</boxing_gloves_model>
+      <boxing_gloves_price currency="лев">65.00</boxing_gloves_price>
+      <boxing_gloves_size>12 ОЗ</boxing_gloves_size>
+      <boxing_gloves_rating>9</boxing_gloves_rating>
+      <boxing_gloves_material>естествена кожа</boxing_gloves_material>
+      <origin>Спортер</origin>
+    </boxing_gloves>
+    <boxing_gloves boxing_gloves_id="14" available_in_shop="N1">
+      <boxing_gloves_model>Праид</boxing_gloves_model>
+      <boxing_gloves_price currency="лев">58.00</boxing_gloves_price>
+      <boxing_gloves_size>10 ОЗ</boxing_gloves_size>
+      <boxing_gloves_rating>7</boxing_gloves_rating>
+      <boxing_gloves_material>естествена кожа</boxing_gloves_material>
+      <origin>Спортер</origin>
+    </boxing_gloves>
+    <sport_shoes sport_shoes_id="13" available_in_shop="N1">
+      <shoes_model>Спорт</shoes_model>
+      <shoes_price currency="лев">64.00</shoes_price>
+      <shoes_size>41</shoes_size>
+      <shoes_color>бяли</shoes_color>
+      <shoes_brand>Пума</shoes_brand>
+    </sport_shoes>
+    <sport_shoes sport_shoes_id="14" available_in_shop="N1">
+      <shoes_model>Респон</shoes_model>
+      <shoes_price currency="лев">56.00</shoes_price>
+      <shoes_size>40</shoes_size>
+      <shoes_color>черни</shoes_color>
+      <shoes_brand>Пума</shoes_brand>
+    </sport_shoes>
+  </sport_accessories>
+</sport_shop>
+

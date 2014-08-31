@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b4a0b3361c554c258e0493bcb23cbd11" Name="Diagram1">
+        <EntityTypeShape EntityType="SportShopModel.boxing_gloves" Width="1.5" PointX="7.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.shop_info" Width="1.5" PointX="4.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.sport_shoes" Width="1.5" PointX="4.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.supplement" Width="1.5" PointX="2.25" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="SportShopModel.FK__boxing_gl__avail__09DE7BCC" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK__sport_sho__avail__0EA330E9" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK__supplemen__avail__0519C6AF" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

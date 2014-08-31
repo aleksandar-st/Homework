@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SportShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="boxing_gloves">
+          <Key>
+            <PropertyRef Name="boxing_gloves_id" />
+          </Key>
+          <Property Name="boxing_gloves_id" Type="int" Nullable="false" />
+          <Property Name="available_in_shop" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="boxing_gloves_model" Type="varchar" MaxLength="255" />
+          <Property Name="boxing_gloves_price" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="currency" Type="varchar" MaxLength="255" />
+          <Property Name="boxing_gloves_size" Type="varchar" MaxLength="255" />
+          <Property Name="boxing_gloves_rating" Type="int" />
+          <Property Name="boxing_gloves_material" Type="varchar" MaxLength="255" />
+          <Property Name="origin" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="shop_info">
+          <Key>
+            <PropertyRef Name="shop_id" />
+          </Key>
+          <Property Name="shop_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="shop_name" Type="varchar" MaxLength="255" />
+          <Property Name="country" Type="varchar" MaxLength="255" />
+          <Property Name="city" Type="varchar" MaxLength="255" />
+          <Property Name="address" Type="varchar" MaxLength="255" />
+          <Property Name="phone" Type="varchar" MaxLength="255" />
+          <Property Name="email" Type="varchar" MaxLength="255" />
+          <Property Name="site" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="sport_shoes">
+          <Key>
+            <PropertyRef Name="sport_shoes_id" />
+          </Key>
+          <Property Name="sport_shoes_id" Type="int" Nullable="false" />
+          <Property Name="available_in_shop" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="shoes_model" Type="varchar" MaxLength="255" />
+          <Property Name="shoes_price" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="currency" Type="varchar" MaxLength="255" />
+          <Property Name="shoes_size" Type="int" />
+          <Property Name="shoes_color" Type="varchar" MaxLength="255" />
+          <Property Name="shoes_brand" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="supplement">
+          <Key>
+            <PropertyRef Name="supplement_id" />
+          </Key>
+          <Property Name="supplement_id" Type="int" Nullable="false" />
+          <Property Name="available_in_shop" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="type" Type="varchar" MaxLength="255" />
+          <Property Name="purpose" Type="varchar" MaxLength="255" />
+          <Property Name="supplement_brand" Type="varchar" MaxLength="255" />
+          <Property Name="supplement_name" Type="varchar" MaxLength="255" />
+          <Property Name="supplement_price" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="currency" Type="varchar" MaxLength="255" />
+          <Property Name="supplement_rating" Type="int" />
+          <Property Name="taste" Type="varchar" MaxLength="255" />
+          <Property Name="packing" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="measurement_unit" Type="varchar" MaxLength="255" />
+          <Property Name="servings" Type="int" />
+        </EntityType>
+        <Association Name="FK__boxing_gl__avail__09DE7BCC">
+          <End Role="shop_info" Type="Self.shop_info" Multiplicity="1" />
+          <End Role="boxing_gloves" Type="Self.boxing_gloves" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shop_info">
+              <PropertyRef Name="shop_id" />
+            </Principal>
+            <Dependent Role="boxing_gloves">
+              <PropertyRef Name="available_in_shop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__sport_sho__avail__0EA330E9">
+          <End Role="shop_info" Type="Self.shop_info" Multiplicity="1" />
+          <End Role="sport_shoes" Type="Self.sport_shoes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shop_info">
+              <PropertyRef Name="shop_id" />
+            </Principal>
+            <Dependent Role="sport_shoes">
+              <PropertyRef Name="available_in_shop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__supplemen__avail__0519C6AF">
+          <End Role="shop_info" Type="Self.shop_info" Multiplicity="1" />
+          <End Role="supplement" Type="Self.supplement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shop_info">
+              <PropertyRef Name="shop_id" />
+            </Principal>
+            <Dependent Role="supplement">
+              <PropertyRef Name="available_in_shop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SportShopModelStoreContainer">
+          <EntitySet Name="boxing_gloves" EntityType="Self.boxing_gloves" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="shop_info" EntityType="Self.shop_info" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sport_shoes" EntityType="Self.sport_shoes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="supplement" EntityType="Self.supplement" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__boxing_gl__avail__09DE7BCC" Association="Self.FK__boxing_gl__avail__09DE7BCC">
+            <End Role="shop_info" EntitySet="shop_info" />
+            <End Role="boxing_gloves" EntitySet="boxing_gloves" />
+          </AssociationSet>
+          <AssociationSet Name="FK__sport_sho__avail__0EA330E9" Association="Self.FK__sport_sho__avail__0EA330E9">
+            <End Role="shop_info" EntitySet="shop_info" />
+            <End Role="sport_shoes" EntitySet="sport_shoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__supplemen__avail__0519C6AF" Association="Self.FK__supplemen__avail__0519C6AF">
+            <End Role="shop_info" EntitySet="shop_info" />
+            <End Role="supplement" EntitySet="supplement" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SportShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="boxing_gloves">
+          <Key>
+            <PropertyRef Name="boxing_gloves_id" />
+          </Key>
+          <Property Name="boxing_gloves_id" Type="Int32" Nullable="false" />
+          <Property Name="available_in_shop" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="boxing_gloves_model" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="boxing_gloves_price" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="currency" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="boxing_gloves_size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="boxing_gloves_rating" Type="Int32" />
+          <Property Name="boxing_gloves_material" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="origin" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="shop_info" Relationship="Self.FK__boxing_gl__avail__09DE7BCC" FromRole="boxing_gloves" ToRole="shop_info" />
+        </EntityType>
+        <EntityType Name="shop_info">
+          <Key>
+            <PropertyRef Name="shop_id" />
+          </Key>
+          <Property Name="shop_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="shop_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="country" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="city" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="site" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="boxing_gloves" Relationship="Self.FK__boxing_gl__avail__09DE7BCC" FromRole="shop_info" ToRole="boxing_gloves" />
+          <NavigationProperty Name="sport_shoes" Relationship="Self.FK__sport_sho__avail__0EA330E9" FromRole="shop_info" ToRole="sport_shoes" />
+          <NavigationProperty Name="supplement" Relationship="Self.FK__supplemen__avail__0519C6AF" FromRole="shop_info" ToRole="supplement" />
+        </EntityType>
+        <EntityType Name="sport_shoes">
+          <Key>
+            <PropertyRef Name="sport_shoes_id" />
+          </Key>
+          <Property Name="sport_shoes_id" Type="Int32" Nullable="false" />
+          <Property Name="available_in_shop" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="shoes_model" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="shoes_price" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="currency" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="shoes_size" Type="Int32" />
+          <Property Name="shoes_color" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="shoes_brand" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="shop_info" Relationship="Self.FK__sport_sho__avail__0EA330E9" FromRole="sport_shoes" ToRole="shop_info" />
+        </EntityType>
+        <EntityType Name="supplement">
+          <Key>
+            <PropertyRef Name="supplement_id" />
+          </Key>
+          <Property Name="supplement_id" Type="Int32" Nullable="false" />
+          <Property Name="available_in_shop" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="purpose" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="supplement_brand" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="supplement_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="supplement_price" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="currency" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="supplement_rating" Type="Int32" />
+          <Property Name="taste" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="packing" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="measurement_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="servings" Type="Int32" />
+          <NavigationProperty Name="shop_info" Relationship="Self.FK__supplemen__avail__0519C6AF" FromRole="supplement" ToRole="shop_info" />
+        </EntityType>
+        <Association Name="FK__boxing_gl__avail__09DE7BCC">
+          <End Role="shop_info" Type="Self.shop_info" Multiplicity="1" />
+          <End Role="boxing_gloves" Type="Self.boxing_gloves" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shop_info">
+              <PropertyRef Name="shop_id" />
+            </Principal>
+            <Dependent Role="boxing_gloves">
+              <PropertyRef Name="available_in_shop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__sport_sho__avail__0EA330E9">
+          <End Role="shop_info" Type="Self.shop_info" Multiplicity="1" />
+          <End Role="sport_shoes" Type="Self.sport_shoes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shop_info">
+              <PropertyRef Name="shop_id" />
+            </Principal>
+            <Dependent Role="sport_shoes">
+              <PropertyRef Name="available_in_shop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__supplemen__avail__0519C6AF">
+          <End Role="shop_info" Type="Self.shop_info" Multiplicity="1" />
+          <End Role="supplement" Type="Self.supplement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shop_info">
+              <PropertyRef Name="shop_id" />
+            </Principal>
+            <Dependent Role="supplement">
+              <PropertyRef Name="available_in_shop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SportShopEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="boxing_gloves" EntityType="Self.boxing_gloves" />
+          <EntitySet Name="shop_info" EntityType="Self.shop_info" />
+          <EntitySet Name="sport_shoes" EntityType="Self.sport_shoes" />
+          <EntitySet Name="supplement" EntityType="Self.supplement" />
+          <AssociationSet Name="FK__boxing_gl__avail__09DE7BCC" Association="Self.FK__boxing_gl__avail__09DE7BCC">
+            <End Role="shop_info" EntitySet="shop_info" />
+            <End Role="boxing_gloves" EntitySet="boxing_gloves" />
+          </AssociationSet>
+          <AssociationSet Name="FK__sport_sho__avail__0EA330E9" Association="Self.FK__sport_sho__avail__0EA330E9">
+            <End Role="shop_info" EntitySet="shop_info" />
+            <End Role="sport_shoes" EntitySet="sport_shoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__supplemen__avail__0519C6AF" Association="Self.FK__supplemen__avail__0519C6AF">
+            <End Role="shop_info" EntitySet="shop_info" />
+            <End Role="supplement" EntitySet="supplement" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SportShopModelStoreContainer" CdmEntityContainer="SportShopEntities">
+          <EntitySetMapping Name="boxing_gloves">
+            <EntityTypeMapping TypeName="SportShopModel.boxing_gloves">
+              <MappingFragment StoreEntitySet="boxing_gloves">
+                <ScalarProperty Name="boxing_gloves_id" ColumnName="boxing_gloves_id" />
+                <ScalarProperty Name="available_in_shop" ColumnName="available_in_shop" />
+                <ScalarProperty Name="boxing_gloves_model" ColumnName="boxing_gloves_model" />
+                <ScalarProperty Name="boxing_gloves_price" ColumnName="boxing_gloves_price" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="boxing_gloves_size" ColumnName="boxing_gloves_size" />
+                <ScalarProperty Name="boxing_gloves_rating" ColumnName="boxing_gloves_rating" />
+                <ScalarProperty Name="boxing_gloves_material" ColumnName="boxing_gloves_material" />
+                <ScalarProperty Name="origin" ColumnName="origin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="shop_info">
+            <EntityTypeMapping TypeName="SportShopModel.shop_info">
+              <MappingFragment StoreEntitySet="shop_info">
+                <ScalarProperty Name="shop_id" ColumnName="shop_id" />
+                <ScalarProperty Name="shop_name" ColumnName="shop_name" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="site" ColumnName="site" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sport_shoes">
+            <EntityTypeMapping TypeName="SportShopModel.sport_shoes">
+              <MappingFragment StoreEntitySet="sport_shoes">
+                <ScalarProperty Name="sport_shoes_id" ColumnName="sport_shoes_id" />
+                <ScalarProperty Name="available_in_shop" ColumnName="available_in_shop" />
+                <ScalarProperty Name="shoes_model" ColumnName="shoes_model" />
+                <ScalarProperty Name="shoes_price" ColumnName="shoes_price" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="shoes_size" ColumnName="shoes_size" />
+                <ScalarProperty Name="shoes_color" ColumnName="shoes_color" />
+                <ScalarProperty Name="shoes_brand" ColumnName="shoes_brand" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="supplement">
+            <EntityTypeMapping TypeName="SportShopModel.supplement">
+              <MappingFragment StoreEntitySet="supplement">
+                <ScalarProperty Name="supplement_id" ColumnName="supplement_id" />
+                <ScalarProperty Name="available_in_shop" ColumnName="available_in_shop" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="purpose" ColumnName="purpose" />
+                <ScalarProperty Name="supplement_brand" ColumnName="supplement_brand" />
+                <ScalarProperty Name="supplement_name" ColumnName="supplement_name" />
+                <ScalarProperty Name="supplement_price" ColumnName="supplement_price" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="supplement_rating" ColumnName="supplement_rating" />
+                <ScalarProperty Name="taste" ColumnName="taste" />
+                <ScalarProperty Name="packing" ColumnName="packing" />
+                <ScalarProperty Name="measurement_unit" ColumnName="measurement_unit" />
+                <ScalarProperty Name="servings" ColumnName="servings" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

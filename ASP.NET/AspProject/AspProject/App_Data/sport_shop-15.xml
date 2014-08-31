@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sport_shop SYSTEM "sport_shop.dtd">
+<sport_shop>
+  <shop_info shop_id="N1">
+    <shop_name>Сила</shop_name>
+    <country>България</country>
+    <city>София</city>
+    <address>Георги С. Раковски 176</address>
+    <phone>0876142563</phone>
+    <email>sila@gmail.com</email>
+    <site>www.sila.com</site>
+  </shop_info>
+  <supplements>
+    <supplement supplement_id="29"  type="Протеини" purpose="Изграждане на чисти мускули"  supplement_brand="Универсал" available_in_shop="N1">
+      <supplement_name>Пауър</supplement_name>
+      <supplement_price currency="лев">48.00</supplement_price>
+      <supplement_rating>6</supplement_rating>
+      <taste>ванилия</taste>
+      <packing measurement_unit="кг">1.000</packing>
+      <servings>10 дози</servings>
+    </supplement>
+    <supplement supplement_id="30"  type="Креатини" purpose="Увеличава издръжливостта"  supplement_brand="Биотеч" available_in_shop="N1">
+      <supplement_name>Креатестон</supplement_name>
+      <supplement_price currency="лев">52.00</supplement_price>
+      <supplement_rating>8</supplement_rating>
+      <taste>шоколад</taste>
+      <packing measurement_unit="кг">1.000</packing>
+      <servings>50 дози</servings>
+    </supplement>
+  </supplements>
+  <sport_accessories>
+    <boxing_gloves boxing_gloves_id="28" available_in_shop="N1">
+      <boxing_gloves_model>Спидер</boxing_gloves_model>
+      <boxing_gloves_price currency="лев">57.00</boxing_gloves_price>
+      <boxing_gloves_size>14 ОЗ</boxing_gloves_size>
+      <boxing_gloves_rating>7</boxing_gloves_rating>
+      <boxing_gloves_material>изкуствена кожа</boxing_gloves_material>
+      <origin>Еверласт</origin>
+    </boxing_gloves>
+    <boxing_gloves boxing_gloves_id="29" available_in_shop="N1">
+      <boxing_gloves_model>Протекс</boxing_gloves_model>
+      <boxing_gloves_price currency="лев">56.00</boxing_gloves_price>
+      <boxing_gloves_size>10 ОЗ</boxing_gloves_size>
+      <boxing_gloves_rating>7</boxing_gloves_rating>
+      <boxing_gloves_material>изкуствена кожа</boxing_gloves_material>
+      <origin>Еверласт</origin>
+    </boxing_gloves>
+    <sport_shoes sport_shoes_id="28" available_in_shop="N1">
+      <shoes_model>Канадия</shoes_model>
+      <shoes_price currency="лев">74.00</shoes_price>
+      <shoes_size>44</shoes_size>
+      <shoes_color>черни</shoes_color>
+      <shoes_brand>Адидас</shoes_brand>
+    </sport_shoes>
+    <sport_shoes sport_shoes_id="29" available_in_shop="N1">
+      <shoes_model>Проф</shoes_model>
+      <shoes_price currency="лев">86.00</shoes_price>
+      <shoes_size>42</shoes_size>
+      <shoes_color>черни</shoes_color>
+      <shoes_brand>Пума</shoes_brand>
+    </sport_shoes>
+  </sport_accessories>
+</sport_shop>
+

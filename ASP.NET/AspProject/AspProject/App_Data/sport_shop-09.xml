@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sport_shop SYSTEM "sport_shop.dtd">
+<sport_shop>
+  <shop_info shop_id="N1">
+    <shop_name>Сила</shop_name>
+    <country>България</country>
+    <city>София</city>
+    <address>Георги С. Раковски 176</address>
+    <phone>0876142563</phone>
+    <email>sila@gmail.com</email>
+    <site>www.sila.com</site>
+  </shop_info>
+  <supplements>
+    <supplement supplement_id="17"  type="Гейнъри" purpose="Стимулира покачването на тегло"  supplement_brand="Гаспари" available_in_shop="N1">
+      <supplement_name>Гаин Про</supplement_name>
+      <supplement_price currency="лев">85.00</supplement_price>
+      <supplement_rating>6</supplement_rating>
+      <taste>ванилия</taste>
+      <packing measurement_unit="кг">1.800</packing>
+      <servings>15 дози</servings>
+    </supplement>
+    <supplement supplement_id="18" type="Аминокиселини" purpose="Изгаряне на мазнини"  supplement_brand="Гаспари" available_in_shop="N1">
+      <supplement_name>Амино Ласт</supplement_name>
+      <supplement_price currency="лев">64.00</supplement_price>
+      <supplement_rating>7</supplement_rating>
+      <taste>лимон</taste>
+      <packing measurement_unit="кг">0.450</packing>
+      <servings>22 дози</servings>
+    </supplement>
+  </supplements>
+  <sport_accessories>
+    <boxing_gloves boxing_gloves_id="17" available_in_shop="N1">
+      <boxing_gloves_model>Фоам</boxing_gloves_model>
+      <boxing_gloves_price currency="лев">55.00</boxing_gloves_price>
+      <boxing_gloves_size>12 ОЗ</boxing_gloves_size>
+      <boxing_gloves_rating>7</boxing_gloves_rating>
+      <boxing_gloves_material>изкуствена кожа</boxing_gloves_material>
+      <origin>Еверласт</origin>
+    </boxing_gloves>
+    <sport_shoes sport_shoes_id="17" available_in_shop="N1">
+      <shoes_model>Род</shoes_model>
+      <shoes_price currency="лев">58.00</shoes_price>
+      <shoes_size>44</shoes_size>
+      <shoes_color>бяли</shoes_color>
+      <shoes_brand>Адидас</shoes_brand>
+    </sport_shoes>
+    <sport_shoes sport_shoes_id="18" available_in_shop="N1">
+      <shoes_model>Екстра</shoes_model>
+      <shoes_price currency="лев">106.00</shoes_price>
+      <shoes_size>46</shoes_size>
+      <shoes_color>черни</shoes_color>
+      <shoes_brand>Пума</shoes_brand>
+    </sport_shoes>
+  </sport_accessories>
+</sport_shop>
+

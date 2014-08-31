@@ -1,0 +1,10 @@
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\AspProject.dll.config
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\AspProject.dll
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\AspProject.pdb
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\EntityFramework.dll
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\EntityFramework.SqlServer.dll
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\EntityFramework.xml
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\bin\EntityFramework.SqlServer.xml
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\obj\Debug\AspProject.csprojResolveAssemblyReference.cache
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\obj\Debug\AspProject.dll
+c:\users\aleksandarst\documents\visual studio 2013\Projects\AspProject\AspProject\obj\Debug\AspProject.pdb
