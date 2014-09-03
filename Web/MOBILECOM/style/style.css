@@ -1,0 +1,282 @@
+body, div, nav, section, header, ul, li, a, span, p, h1, h2, h3, img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+    font-family: Tahoma, serif;
+    font-size: 16px;
+    color: #333;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+}
+p, h2, h3{
+    cursor: default;
+}
+p{
+    font-size: 16px;
+}
+.wrapper{
+	width: 960px;
+	margin: auto;
+}
+header, #banners, #device-offer, #site-block{   
+    -webkit-box-shadow: 0px 5px 8px -4px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 5px 8px -4px rgba(0,0,0,0.8);
+    box-shadow: 0px 5px 8px -4px rgba(0,0,0,0.8);
+    padding: 20px 0 20px 0; 
+    margin-bottom: 5px; 
+}
+header, #device-offer{
+    background: #F3F3F3;
+}
+#site-block, #banners{
+    background: #FFFFFF;
+}
+.expand > ul > li a, .device-long-info > ul > li a{
+        font-size: 13px;
+}
+/* Start header */
+header{
+    height: 125px;
+}
+.user-nav > ul > li{
+	float: left;
+	border-right: 2px solid #E0E0E0; 
+}
+    .user-nav > ul > li:nth-child(7) {
+        border-right:none; 
+    }
+    .expand{
+        position: relative;        
+    }   
+        .expand > a{
+            display: inline-block;
+            width: 115px;
+            height: 105px;
+            padding: 10px;
+            position: relative;
+            z-index: 5;
+        }
+            .icon{
+            	width: 100%;
+                height: 60px;
+            }
+                .icon img{
+                   display: block;
+                   margin-left: auto;
+                   margin-right: auto; 
+                }
+            .text{
+                width: 100%;
+                height: 40px;
+            }
+                .text p{
+                    width: 100%;
+                    height: 40px;
+                    overflow: hidden;
+                    text-align: center;
+                    word-wrap: break-word; 
+                }    
+        .expand ul{
+            display: none;
+            width: 117px;
+            max-height: 370px;
+            background: #F3F3F3;
+            position: absolute;
+            padding: 112px 10px 10px;
+            top: 0;
+            left: -2px;
+            border: 1px solid #c8c9ca;
+            box-shadow: 0 0 10px rgba(0,0,0,.29);
+            overflow: hidden;
+        }
+            .expand > ul > li{    
+                line-height: 25px;
+                word-wrap: break-word;
+            }
+                .expand ul li a:before{
+                    content: ">";
+                }    
+                .expand ul li a:hover{
+                    color: #00B8E6;
+                }
+/* End header */
+/* Start section banners */
+#banners article{
+	display: inline-block;
+}
+    .banner{
+    	width: 295px;
+    	height: 290px;
+        padding: 10px;
+    }
+        .banner div > a{
+        	display: inline-block;
+        	width: 100%;
+        	height: 200px;
+        }
+            .banner img{
+            	width: 100%;
+            	height: 200px;
+            	-webkit-box-shadow: 0px 10px 8px -4px rgba(0,0,0,1);
+                -moz-box-shadow: 0px 10px 8px -4px rgba(0,0,0,1);
+                box-shadow: 0px 5px 10px -4px rgba(0,0,0,1);
+            }
+        .banner h3{
+        	display: inline-block;
+        	width: 100%;
+            height: 22px;
+            text-align: center;
+            word-wrap: break-word; 
+            overflow: hidden;
+        }
+            .banner h3 a{
+                display: inline-block;
+                max-width: 100%;
+                max-height: 22px;
+            }
+        .banner p{
+        	width: 100%;
+            height: 60px;
+            overflow: hidden;
+            text-align: center;
+            word-wrap: break-word; 
+        }
+/* End section banners */
+/* Start section device-offer */
+.device-offer-tittle{
+    text-align: center;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 75px;
+}
+.device{
+    display: inline-block;
+    position: relative;
+    width: 215px;
+    height: 260px;
+    padding: 10px;    
+}
+    .device-short-info{
+        width: 100%;
+        height: 260px;
+        border-bottom: 2px solid #E0E0E0;
+    }
+        .device-short-info > a{
+            display: inline-block;
+            width: 100%;
+            height: 215px;
+            position: relative;
+            z-index: 5;
+        }
+            .device-short-info >a img{
+                width: 100%;
+                height: 215px;
+            }
+        .device-short-info h3{
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            word-wrap: break-word; 
+            overflow: hidden;
+            position: relative;
+            z-index: 5;
+        }
+                .device-short-info h3 a{
+                    display: inline-block;
+                    max-width: 100%;
+                    max-height: 40px;
+                }
+    .device-long-info{
+        display: none;
+        width: 215px;        
+        background: #F3F3F3;
+        position: absolute;
+        padding:287px 10px 10px;
+        top:0;
+        left:0;
+        border: 1px solid #c8c9ca;
+        box-shadow: 0 0 10px rgba(0,0,0,.29);   
+    }   
+        .device-long-info ul{
+            max-height: 195px;
+            overflow: auto;
+        }
+            .device-long-info li{
+                line-height: 25px;
+                word-wrap: break-word;
+            }
+                .device-long-info li a:before{
+                    content: ">";
+                }
+/* End section device-offer */
+/* Start section site-block */
+#site-block{
+    margin-bottom: 0;
+}
+    .col{
+        float: left;
+        width: 449px;            
+    }
+        .col:nth-child(1) {
+            padding-right: 30px;
+            border-right: 2px solid #E0E0E0; 
+        }
+        .col:nth-child(2) {
+            padding-left: 30px;
+        }
+        .col h2{
+            width: 100%;
+            font-size: 20px;
+            overflow: hidden;
+        }
+        .col li{
+            line-height: 25px;
+            word-wrap: break-word;
+        }
+            .col li a:before{
+                content: ">";
+            }
+    .clearfix{
+        clear: both;
+    }
+/* End section site-block */
+/* Start footer */
+footer{
+    padding: 20px 0 20px 0; 
+    background: #333334
+}
+    .site-nav ul{
+        text-align: center;
+    }
+        .site-nav li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+            .site-nav a{
+                display: inline-block;
+                color: #c6c6c6;
+                font-size: 14px;
+                max-width: 150px;
+                max-height: 20px;
+                overflow: hidden;                
+            }
+                .site-nav a:hover{
+                    text-decoration: underline;
+                }
+/* End footer */
