@@ -9,6 +9,10 @@ $(document).ready(function() {
         }
     });
 
+    $('.hp').on('click', function(e){
+        e.preventDefault();
+    }); 
+
     $('.banner > div').on({
         mouseenter: function () {
             changeFontColor($(this).find("h3 a"));
@@ -25,7 +29,7 @@ $(document).ready(function() {
             $("."+nameAttr).css({ 
                 "display": "inline-block", 
                 "opacity": 0,
-                "background": "#F8F8F8"
+                "background": "#EDE7FF"
             }).stop().animate({ 
                 "opacity": 1 
             }, 500);
