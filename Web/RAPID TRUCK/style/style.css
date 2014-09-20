@@ -10,11 +10,12 @@ a{
 	text-decoration: none;
 	color: #767778;
 }
-body{
-	font-family: 'Arial';
-    font-size: 12px;
+html{
+    font-family: 'Arial';
+    font-size: 16px;
     color: #767778;
     background: #000;
+    overflow-x: hidden;
 }
 h1, h2, h3, span, p, a{
 	word-wrap: break-word;
@@ -22,16 +23,19 @@ h1, h2, h3, span, p, a{
 h1, h2, h3, span, p{
     cursor: default;
 }
-h1{
-	font-size: 35px;
+h1 a, h1{
+	font-size: 2.1875rem;;
 	text-transform: uppercase;
 }
 h2{
-	font-size: 30px;
+	font-size: 1.875rem;
 	text-transform: capitalize;
 }
 h3{
-	font-size: 20px;
+	font-size: 1.25rem;
+}
+p, a{
+    font-size: 0.75rem;
 }
 span{
 	color: #fff;
@@ -50,43 +54,46 @@ span{
 .active{
     color: #fff;
 }
+.toggle-nav{
+    display: none;  
+}
+.main{
+    position: relative;
+    left: 0;
+}
 /* Start header */
 .header{
 	margin-top: 100px;
+    max-width: 100%;
 }
-    .header > div{
-    	max-height: 130px;
+    .logo{
+   	    width: 40%;
+   	    float: left;
     }
-        .logo{
-   	        width: 400px;
-   	        float: left;
-   	        overflow: hidden;
+        .logo a{
+        	display: block;
+        	max-height: 120px;
+            overflow: hidden;
         }
-            .logo h1{
-            	max-height: 130px;
-            }
-            .logo a{
-            	display: block;
-            	max-height: 130px;
-            }
-        .short-info{
-        	width: 560px;
-        	float: left;
-        	max-height: 130px;
-        	overflow: hidden;
+    .short-info{
+    	width: 60%;
+    	float: left;
+    	max-height: 120px;
+    	overflow: hidden;
+    }
+        .short-info p{
+        	text-align: right;
+        	line-height: 30px;
+        	height: 30px;
+            overflow: hidden;
         }
-            .short-info p{
-            	text-align: right;
-            	line-height: 30px;
-            	height: 30px;
-                overflow: hidden;
-            }
     .user-nav{
         margin-top: 20px;
-        overflow: hidden;
+        right: 0;
+        position: relative;
     }
         .user-nav ul {
-            height: 70px;
+            width: 100%;
             background: #a5a5a5; /* Old browsers */
             background: -moz-linear-gradient(top,  #a5a5a5 3%, #424242 20%, #000000 44%, #1c1c1c 86%, #3f3f3f 99%); /* FF3.6+ */
             background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#a5a5a5), color-stop(20%,#424242), color-stop(44%,#000000), color-stop(86%,#1c1c1c), color-stop(99%,#3f3f3f)); /* Chrome,Safari4+ */
@@ -98,21 +105,19 @@ span{
         }
             .user-nav ul li{
             	float: left;
-                height: 70px;
                 border-right: 2px solid #000;
             }
-            .user-nav ul li a{
-            	font-size: 16px;
-            	text-transform: uppercase;
-            	font-weight: bold;
-            	display: block;
-            	padding: 26px;
-            	max-width: 180px;
-                overflow: hidden;
-            }
-            .user-nav ul li a:hover{
-                color: #fff;
-            }
+                .user-nav ul li a{
+                	font-size: 1rem;
+                	text-transform: uppercase;
+                	font-weight: bold;
+                	display: block;
+                	padding: 26px;
+                    overflow: hidden;
+                }
+                    .user-nav ul li a:hover{
+                        color: #fff;
+                    }
 /* End header */
 /* Start section content */
 .content{
@@ -120,6 +125,9 @@ span{
 	height: 700px;
 	background: url("../images/home-background.png") no-repeat ;
 	background-position: 0;
+}
+.content > div{
+    max-width: 100%;
 }
     .content > div > div{   	
     	float: right;
@@ -143,14 +151,14 @@ span{
 /* End section content */
 /* Start section additional-content */
 .additional-content{
+    max-width: 100%;
     padding-bottom: 30px;
     border-bottom: 1px solid #767778;
 }
     .additional-content article{
         float: left;
         width: 305px;
-        margin-right: 20px;
-     
+        margin-right: 20px;     
     }
         .additional-content article:last-child{
             margin-right: 0;
@@ -170,13 +178,13 @@ span{
             }
         .additional-content article > p{
             padding-top: 30px;
-            height: 154px;
+            max-height: 152px;
             overflow: hidden;
         }
         .additional-content article > a{
             display: inline-block;
             height: 14px;
-            width: 60px;
+            width: 90px;
             margin-top: 30px;
             color: #fff;
             position: relative;
@@ -190,12 +198,12 @@ span{
                 height: 5px;
                 width: 3px;
                 top: 5px;
-                left: 70px;
+                left: 95px;
 
             }
         .additional-content article > ul{
             padding-top: 30px;
-            height: 154px;
+            max-height: 154px;
             overflow: hidden;
         }
             .additional-content article > ul li{
@@ -205,7 +213,6 @@ span{
                 line-height: 30px;
                 border-bottom: 1px solid #767778;               
                 overflow: hidden;
-
             }
             .additional-content article > ul li:last-child{
                 border-bottom: none;
@@ -236,7 +243,7 @@ span{
 }
     .long-info-container > div{
         position: relative;
-        width: 500px;
+        width: 50%;
         max-height: 450px;
         top: 100px;
         margin: 0 auto;
@@ -265,6 +272,7 @@ span{
 /* End long-info-container */
 /* Start footer */
 .footer{
+    max-width: 100%;
     margin-top: 30px;
     padding-bottom: 30px;
 }

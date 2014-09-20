@@ -1,0 +1,114 @@
+@media screen and (max-width: 1000px ){
+    .additional-content article{
+        width: 31%;   
+    }
+}
+@media screen and (max-width: 960px ){
+    .wrapper{
+        width:98%;
+    }
+}
+@media screen and (max-width: 800px ){
+    /*Start nav */
+    .toggle-nav{    
+        display: inline-block;
+        width: 50px;
+        height: 50px;      
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        background: #767778;
+        opacity: 0.5;
+    }
+        .toggle-nav span{
+            text-align: center;
+            display: block;
+            line-height: 50px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+    .user-nav{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 101%;
+        width: 50%;
+        height: 102%;
+        margin-top: 0;
+        background: #767778;
+    }
+    .user-nav ul{
+        background: #767778;
+    }
+        .user-nav ul li{
+            width: 100%;
+            border-bottom: 2px solid #000;
+            background: #767778;
+        }
+            .user-nav ul li:first-child{
+                margin-top: 50px;
+            }
+            .user-nav ul li a{ 
+                color: #000;
+            }
+        .openNav{
+            right: 50%;
+        }
+        .openBody{
+            left: 50%;
+        }
+    /*End nav */
+    .content > div > div{       
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+        .content p{
+            text-align: justify;
+        }
+}
+@media only screen and (max-width : 640px) {
+    .logo{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .short-info{
+        width: 100%;
+        float: none;
+    }
+        .short-info p{
+            text-align: center;
+        }
+    .additional-content article{
+        float: none;
+        width: 100%; 
+        margin-bottom: 30px;  
+    }
+        .additional-content article > p{
+            text-align: justify;
+        }
+        .additional-content article > ul li{
+            width: 100%;
+        }
+}
+@media only screen and (max-width : 480px) {
+        html{
+            font-size: 17px;
+        } 
+        .user-nav{
+            width: 70%;
+        }
+        .openNav{
+            right: 30%;
+        }
+        .openBody{
+            left: 70%;
+        }
+}
+@media only screen and (max-width : 320px){
+    .footer{
+        display: none;
+    }
+}
