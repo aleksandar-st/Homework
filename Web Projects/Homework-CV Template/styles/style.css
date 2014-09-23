@@ -146,11 +146,11 @@ header{
     .about-me article > div{
         float: left;
     }  
-    .about-sidebar, .about-me-text{
+    .about-me-text{
         width: 60%;
         margin-right: 5%;
     }  
-        .about-sidebar p, .about-me-text p{
+        .about-me-text p{
             text-align: justify;
         }
     .about-me-img{
