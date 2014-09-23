@@ -1,0 +1,119 @@
+@media screen and (max-width: 980px ){
+    .wrapper{
+        width: 98%;
+    }
+    .logo{
+        float: none;
+        width: 50%;
+    }
+    /*Start nav */
+    .toggle-nav{    
+        display: inline-block;
+        width: 50px;
+        height: 50px;      
+        position: fixed;
+        top: 20px;
+        right: 0;
+        z-index: 10000;
+    }
+        .toggle-nav span{
+            text-align: center;
+            display: block;
+            line-height: 50px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+    .user-nav{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 101%;
+        width: 50%;
+        height: 102%;
+        margin-top: 0;
+        background: #293F4C;
+        overflow-x: hidden; 
+    }
+        .user-nav ul{
+            background: #293F4C;
+        }
+            .user-nav ul li{
+                width: 100%;
+                border-bottom: 2px solid #fff;
+                background: #293F4C;
+            }
+                .user-nav ul li:first-child{
+                    margin-top: 100px;
+                }
+                .user-nav ul li a{ 
+                    padding: 30px 27px 30px 27px;
+                }
+        .openNav{
+            left: 50%;
+        }
+        .openBody{
+            right: 50%;
+        }
+    /*End nav */
+}
+@media screen and (max-width: 800px ){
+    .home-page h2, .services-page h3{
+        overflow: initial;
+        height: auto;
+    }
+}
+@media only screen and (max-width : 640px) {
+    .home-page span{
+        overflow: initial;
+        height: auto;
+    }
+        .about-page article{
+            float: none;
+        }
+            .about-page-list{
+                width: 100%;
+            }
+            .about-page-info{
+                width: 100%;
+                margin-left: 0; 
+            }
+        .article-part{
+            float: none;
+            width: 100%;
+        }
+        .long-info-container > div{
+            width: 80%;
+        }
+        .contacts-page article{
+            margin-bottom: 60px;
+        }
+            .contacts-page h4{
+                margin-bottom: 20px;
+            }
+}
+@media only screen and (max-width : 480px) {
+    html{
+        font-size: 11px;
+    }
+        a, p{
+            font-size: 1.25rem;
+        }
+}
+@media only screen and (max-width : 400px) {
+    h1 a, h1{
+        font-size: 2.5rem;
+    }
+        .user-nav{
+            width: 70%;
+        }
+        .openNav{
+            left: 30%;
+        }
+        .openBody{
+            right: 70%;
+        }
+    .about-page h3, .membership-page > div h3{
+            overflow: initial;
+            height: auto;
+    }
+}

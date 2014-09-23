@@ -1,0 +1,371 @@
+/*
+Theme Name: Curriculum vitae;
+Decription: Theme curriculum vitae;
+Author: Aleksandar;
+Version: 1.0;
+*/
+html, body, header, section, article, nav, footer, div, span, h1, h2, h3, h4, h5, h6, img, ul, li, p, a{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    color: #000;
+    font-family: 'Arial';
+    font-size: 16px;
+    overflow-x: hidden;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none; 
+}
+li{
+    list-style: none;
+}
+a{
+    font-size: 0.875rem;
+}
+h1{
+    font-size: 3.125rem;
+}
+h2{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1.1875rem;
+}
+h4{
+    font-size: 1.125rem;
+}
+h5{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+h1, h2, h3, h4, h5, span, p, a{
+    word-wrap: break-word;
+}
+h1, h2, h3, h4, h5, span, p{
+    cursor: default;
+}
+.wrapper{
+    width: 960px;
+    margin: auto;
+    max-width: 100%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.home, .about-me, .skills, .portfolio, .experience, .contact{
+    position: relative;
+    top: 100px;
+    min-height: 100vh;
+    width: 100%;
+}
+.toggle-nav{
+    display: none;  
+}
+section > div{
+    padding: 50px 0 50px 0;
+}
+section > div > h2, section > div > h3{
+    text-align: center;
+    height: 45px;
+    overflow: hidden;
+} 
+section > div > article{
+    margin-top: 30px;
+}
+/* Start header */
+header{
+    background: #262b37;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+    header > div{
+        height: 100px;
+    }
+        .user-nav{       
+            text-align: center;
+            height: 100px;
+        }
+            .user-nav ul{
+                display: inline-block;
+            }
+                .user-nav ul li{
+                    float: left;
+                }
+                    .user-nav ul li a{
+                        display: block;
+                        padding: 42px 27px 42px 27px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #c3c8d6;
+                    }
+                        .user-nav ul li a:hover{
+                            background: #1b1f29;
+                        }
+/* End header */
+/* Start section home-page */
+.home{
+    background: url("../images/home-background.jpg") no-repeat;
+}
+    .home > div{
+        padding-top: 200px;
+        text-align: center;
+    }
+        .home h1{
+            display: inline-block;
+            color: #c3c8d6;
+            max-height: 220px;
+            padding: 20px;
+            overflow: hidden;
+            border: 2px solid #c3c8d6;
+        }
+/* End section home-page */
+/* Start section about-me */
+.about-me{
+    background: #00bdbd;
+    color: #fff;
+} 
+    .about-me article > div{
+        float: left;
+    }  
+    .about-sidebar, .about-me-text{
+        width: 60%;
+        margin-right: 5%;
+    }  
+        .about-sidebar p, .about-me-text p{
+            text-align: justify;
+        }
+    .about-me-img{
+        width: 35%;
+    }  
+/* End section about-me */
+/* Start section skills */
+.skills{
+    background: #e8edf0;
+    color: #33446E;
+}
+    .skills h3{
+        color: #93959c;
+    }
+    .skills-text{
+        float: left;
+        width: 20%;
+        margin-right: 2%;
+        line-height: 35px; 
+        height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        overflow: hidden;
+    }
+        .progress-bar {
+            float: left;
+            width: 78%;
+            height: 25px;
+            background: #e8edf0;
+        }
+        .progress-bar div {
+            height: 100%;
+            width: 0;
+            background: #33446E;
+            border-radius: 5px;
+        }
+/* End section skills */
+/* Start section portfolio */
+.portfolio{
+    background: #293f4c;
+    color: #fff;
+}
+    .portfolio h3{
+        color: #93959c;
+    }
+    .portfolio-content div{
+        float: left;
+        width: 22%;
+        margin-right: 4%;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+        .portfolio-content div:nth-child(4n+0){
+            margin-right: 0;
+        }
+        .portfolio-content div a{
+            display: inline-block;
+            position: relative;
+            width: 100%;
+        }
+            .portfolio-content div p{
+                display: none;
+                background: url("../images/opacity.png");
+                position: absolute;
+                top: 43%;
+                padding: 10px;
+                width: 80px;
+                height: 20px;
+                color: #fff;
+                overflow: hidden;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .portfolio-content div img{
+                transition: all 0.5s ease 0s;
+            }
+            .portfolio-content div img:hover{
+                transform: scale(1.1);
+                transition: all 0.5s ease 0s;
+            }
+/* End section portfolio */
+/* Start section experience */
+.experience{
+    background: #C4B195;
+    color: #000;
+}
+    .experience h3{
+        color: #8A5555;
+    }
+    .work{
+        float: left;       
+        width: 15%;
+        margin-right: 3%;
+        padding-right: 3%;
+        border-right: 1px solid #fff;
+    }
+        .work-year{  
+            width: 100%;
+            height: 105px;      
+            background: #8A5555;     
+            border-radius: 50%;  
+            text-align: center;     
+        }    
+        .work-date{
+            display: inline-block;
+            max-width: 100%;
+            height: 20px;
+            line-height: 20px;     
+            overflow: hidden;
+        }   
+        .from{
+            margin-top: 30px;
+        }
+    .job-description{
+        float: left;     
+        background: #fff;
+        width: 78%;
+    }
+    .job-description > div{
+        padding: 30px;
+    }
+        .job-description h5{
+            height: 20px;
+            overflow: hidden;
+        }
+/* End section experience */
+/* Start section contact */
+.contact{
+    background: #474d5d;
+    color: #93959c;
+}
+    .contact h2{
+        color: #ff675f;
+    }
+    .contact  article{
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+    }
+        .contact  article:nth-child(2n+0){
+            margin-right: 0;
+        }
+        .contact-details h4{
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+        }
+        .contact-details a{
+            display: inline-block;
+            color: #93959c;
+            height: 25px;
+            line-height: 25px;
+            max-width: 100%;
+        }
+        i{
+            padding-right: 20px;
+            width: 10px;
+        }
+/*    #send-message{
+        display: inline-block;
+        position: absolute;
+    }
+        #send-message h3{
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        #send-message .your-info{
+            margin-bottom: 10px;
+            color: #93959c
+        }       
+        .contact-field{
+            background: #585f73;
+            padding-left: 10px;
+            border: none;
+            width: 530px;
+            height: 40px;
+            color: #93959c;
+            font-style: italic;
+            font: 14px "Georgia" sans-serif;
+            font-style: italic;
+        }
+        #send-message textarea{
+            width: 528px;
+            padding-top: 10px;
+            height: 90px;
+            
+        }
+        #send-message input[type="submit"]{
+            height: 40px;
+            width: 150px;
+            border: none;
+            background: #f5534b;
+            color: #fff;
+            font-weight: bold;
+        }       
+        .wpcf7-not-valid-tip{
+            display: block;
+            color: #f5534b;
+        }
+        .wpcf7-validation-errors {
+            max-width: 535px;
+            background: #ffe2e2;
+            border: 1px solid #f5534b;
+            color: #f5534b;
+        }
+        .wpcf7-response-output {
+            margin: 10px 0;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border-radius: 5px;
+        }*/
+/* End section contact */

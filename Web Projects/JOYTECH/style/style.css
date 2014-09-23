@@ -1,0 +1,346 @@
+html, body, header, section, article, footer, div, span, h1, h2, h3, h4, h5, h6, img, ul, li, p, a{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: 0;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    color: #000;
+    font-family: 'Arial';
+    font-size: 16px;
+    overflow-x: hidden;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.875rem;
+}
+li{
+	list-style: none;
+}
+h1 a, h1{
+	font-size: 3.125rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+h2{
+	font-size: 3.75rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+h3{
+	font-size: 3.125rem;;
+	text-transform: uppercase;
+	color: #293f4c;
+}
+h4{
+	font-size: 1.5625rem;
+    color: #678495;
+}
+h5{
+	font-size: 1.5rem;
+    color: #678495;
+}
+p{
+    font-size:0.8125rem
+}
+h1, h2, h3, h4, h5, span, p, a{
+	word-wrap: break-word;
+}
+h1, h2, h3, h4, h5, span, p{
+    cursor: default;
+}
+.wrapper{
+	width: 960px;
+	margin: auto;
+    max-width: 100%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.home-page, .about-page, .services-page, .membership-page, .contacts-page{
+    position: relative;
+    top: 100px;
+    min-height: 100vh;
+    width: 100%;
+}
+.toggle-nav{
+    display: none;  
+}
+.main{
+    right: 0;
+}
+section > div, footer > div{
+    padding: 50px 0 50px 0;
+}
+/* Start header */
+header{
+	background: #293f4c;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+}
+    header > div{
+    	height: 100px;
+    }
+        .logo{
+        	float: left;
+        	width: 33%;
+        }
+            .logo h1{
+            	height: 100px;
+            	overflow: hidden;
+            }
+                .logo h1 a{
+                 	display: inline-block;
+                 	max-width: 100%;
+                 	max-height: 100px;
+                    line-height: 100px;
+                    overflow: hidden;
+                }
+        .user-nav{
+            float: left;
+            width: 67%;
+        }
+            .user-nav ul{
+                width: 100%;
+            }
+                .user-nav ul li{
+                	float: left;
+                }
+                    .user-nav ul li a{
+                    	display: block;
+                    	padding: 42px 27px 42px 27px;
+                    	text-transform: uppercase;
+                    	font-weight: bold;
+                    }
+                        .user-nav ul li a:hover{
+                        	background: #fff;
+                        	color: #000;
+                        }
+/* End header */
+/* Start section home-page */
+.home-page{
+    background: url("../images/home-page-background.jpg") no-repeat;
+}
+    .home-page > div{
+        padding-top: 200px;
+    }
+        .home-page h2, .home-page span{
+            display: block;
+            text-align: center;
+        }
+        .home-page span{
+            color: #fff;
+            font-size: 24px;
+            height: 30px;
+            width: 100%;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .home-page h2{
+            height: 70px;
+            width: 100%;
+            overflow: hidden;
+        }
+/* End section home-page */
+/* Start section about-page */
+.about-page{
+    background: #fff;
+}       
+    .about-page h3{
+        text-align: center;
+        border-bottom: 5px solid #293f4c;
+        height: 65px;
+        overflow: hidden;
+    }
+    .about-page h4{
+        text-align: center;
+        line-height: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+    .about-page article{
+        margin-top:60px;
+        float: left;
+    }
+    .about-page-list{
+        width: 30%;
+    }
+        .about-page ul li{
+            width: 100%;
+            border-bottom: 1px solid #678495;
+            height: 40px;
+            line-height: 40px; 
+            overflow: hidden;   
+            background: url("../images/list_arrow1.png") no-repeat right;           
+        }
+            .about-page ul li a{
+                display: block;
+                padding-right: 20px;
+                color: #293f4c;   
+                font-size: 1.125rem;                
+            }
+                .about-page ul li a:hover{
+                    color: #327fab;;
+                }
+    .about-page-info{
+        width: 65%;
+        margin-left: 5%; 
+    }
+        .about-page-info-img{
+            float: left;
+            margin-right: 2%;
+            width: 40%
+        }
+        .about-page-info-text{
+            float: left;
+            width: 58%;
+        }
+            .about-page-info > div h5{
+                height: 56px;
+                overflow: hidden;
+            }
+            .about-page-info > div p{
+                color: #293f4c;
+            }
+/* End section home-page */
+/* Start section services-page */
+.services-page{
+    background: url("../images/services-page-background.jpg") no-repeat;
+}   
+    .services-page > div {
+        text-align: center;
+    }
+        .services-page >div > div{
+            display: inline-block;
+            width: 125px;
+        }
+        .services-page h3{
+            height: 115px;
+            overflow: hidden;
+            color: #fff;
+            text-transform:capitalize;
+        }
+/* End section services-page */
+/* Start section membership-page */
+.membership-page{
+    background: #D1D3D2;
+}
+    .membership-page > div h3{
+        text-align: center;
+        height: 65px;
+        overflow: hidden;
+    }
+    .article-part{       
+        float: left;
+        width: 38%;
+    }
+    .membership-page .article-part{
+        margin-top:60px;
+    }
+        .membership-page article:nth-child(2){
+            margin-right: 24%;
+        }
+            .membership-page article h5{
+                height: 30px;
+                overflow: hidden;
+            }
+            .membership-page article p{
+                height: 92px;
+                color: #293f4c;
+                overflow: hidden;
+                text-align: justify;
+            }
+            .membership-page article > div{
+                margin-top: 20px;
+                text-align: center;
+            }
+                .membership-page article a{
+                    display: inline-block;                    
+                    padding: 20px 35px 20px 35px;
+                    background: #293f4c;
+                    font-weight: bold;
+                }
+                    .membership-page article a:hover{
+                        background: #327fab;
+                    }              
+/* End section membership-page */
+/* Start long-info-container */
+.long-info-container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('../images/opacity.png'); 
+}
+    .long-info-container > div{
+        position: relative;
+        width: 50%;
+        max-height: 450px;
+        top: 100px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #D1D3D2;
+        border-radius: 10px;
+    }
+        .close{
+            margin-bottom: 20px;
+        } 
+            .closeHyperlink{
+                float: right;
+                font-size: 16px;
+                font-weight: bold;
+                color: #293f4c;
+            }
+        .long-text h5{
+            height: 30px;
+            overflow: hidden;
+        }
+        .long-text p{
+            margin-top: 20px;
+            text-align: justify;
+            max-height: 340px;
+            overflow: auto;
+            color: #293f4c;
+        }
+/* End long-info-container */
+/* Start footer contacts-page */
+.contacts-page{
+    background: #0B151E;
+}
+    .contacts-page article:nth-child(1){
+        margin-right: 24%;
+    }
+    .contacts-page h4{
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        height: 30px;
+        overflow: hidden;
+    }
+    .contacts-page p{
+        line-height: 30px;
+        height: 30px;
+        overflow: hidden;
+        color: #fff;
+    }
+    .contacts-page article ul li{
+        float: left;
+        margin-right: 20px;
+    } 
+/* End footer contacts-page */
